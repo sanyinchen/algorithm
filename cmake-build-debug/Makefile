@@ -123,32 +123,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-sort/insertSort.o: sort/insertSort.cpp.o
+sort/mergerSort.o: sort/mergerSort.cpp.o
 
-.PHONY : sort/insertSort.o
+.PHONY : sort/mergerSort.o
 
 # target to build an object file
-sort/insertSort.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/insertSort.cpp.o
-.PHONY : sort/insertSort.cpp.o
+sort/mergerSort.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.o
+.PHONY : sort/mergerSort.cpp.o
 
-sort/insertSort.i: sort/insertSort.cpp.i
+sort/mergerSort.i: sort/mergerSort.cpp.i
 
-.PHONY : sort/insertSort.i
+.PHONY : sort/mergerSort.i
 
 # target to preprocess a source file
-sort/insertSort.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/insertSort.cpp.i
-.PHONY : sort/insertSort.cpp.i
+sort/mergerSort.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.i
+.PHONY : sort/mergerSort.cpp.i
 
-sort/insertSort.s: sort/insertSort.cpp.s
+sort/mergerSort.s: sort/mergerSort.cpp.s
 
-.PHONY : sort/insertSort.s
+.PHONY : sort/mergerSort.s
 
 # target to generate assembly for a file
-sort/insertSort.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/insertSort.cpp.s
-.PHONY : sort/insertSort.cpp.s
+sort/mergerSort.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.s
+.PHONY : sort/mergerSort.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... demo"
-	@echo "... sort/insertSort.o"
-	@echo "... sort/insertSort.i"
-	@echo "... sort/insertSort.s"
+	@echo "... sort/mergerSort.o"
+	@echo "... sort/mergerSort.i"
+	@echo "... sort/mergerSort.s"
 .PHONY : help
 
 

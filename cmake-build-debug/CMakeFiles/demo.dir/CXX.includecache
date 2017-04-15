@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/sanyinchen/CLionProjects/algorithm/sort/insertSort.cpp
+/Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp
 iostream
-/Users/sanyinchen/CLionProjects/algorithm/sort/iostream
+-
+vector
+-
+stack
+-
 

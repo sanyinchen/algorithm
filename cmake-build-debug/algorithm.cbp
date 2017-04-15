@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sanyinchen/CLionProjects/algorithm/sort/insertSort.cpp">
+		<Unit filename="/Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp">
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="/Users/sanyinchen/CLionProjects/algorithm/CMakeLists.txt">

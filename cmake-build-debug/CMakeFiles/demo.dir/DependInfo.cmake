@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sanyinchen/CLionProjects/algorithm/sort/insertSort.cpp" "/Users/sanyinchen/CLionProjects/algorithm/cmake-build-debug/CMakeFiles/demo.dir/sort/insertSort.cpp.o"
+  "/Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp" "/Users/sanyinchen/CLionProjects/algorithm/cmake-build-debug/CMakeFiles/demo.dir/sort/mergerSort.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

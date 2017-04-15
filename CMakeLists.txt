@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 #set(SOURCE_FILES sort/quicksort.cpp sort/insertSort.cpp)
 
-set(SOURCE_FILES sort/insertSort.cpp)
+#set(SOURCE_FILES sort/insertSort.cpp)
 
+set(SOURCE_FILES sort/mergerSort.cpp)
 add_executable(demo ${SOURCE_FILES})
