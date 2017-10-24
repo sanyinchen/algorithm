@@ -57,38 +57,38 @@ include CMakeFiles/demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo.dir/flags.make
 
-CMakeFiles/demo.dir/sort/mergerSort.cpp.o: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/sort/mergerSort.cpp.o: ../sort/mergerSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sanyinchen/CLionProjects/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/sort/mergerSort.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sort/mergerSort.cpp.o -c /Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o: ../aizu_judge/ALDS1_2_B_Selection_Sort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sanyinchen/CLionProjects/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o -c /Users/sanyinchen/CLionProjects/algorithm/aizu_judge/ALDS1_2_B_Selection_Sort.cpp
 
-CMakeFiles/demo.dir/sort/mergerSort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sort/mergerSort.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp > CMakeFiles/demo.dir/sort/mergerSort.cpp.i
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanyinchen/CLionProjects/algorithm/aizu_judge/ALDS1_2_B_Selection_Sort.cpp > CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i
 
-CMakeFiles/demo.dir/sort/mergerSort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sort/mergerSort.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp -o CMakeFiles/demo.dir/sort/mergerSort.cpp.s
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanyinchen/CLionProjects/algorithm/aizu_judge/ALDS1_2_B_Selection_Sort.cpp -o CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s
 
-CMakeFiles/demo.dir/sort/mergerSort.cpp.o.requires:
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.requires:
 
-.PHONY : CMakeFiles/demo.dir/sort/mergerSort.cpp.o.requires
+.PHONY : CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.requires
 
-CMakeFiles/demo.dir/sort/mergerSort.cpp.o.provides: CMakeFiles/demo.dir/sort/mergerSort.cpp.o.requires
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.o.provides.build
-.PHONY : CMakeFiles/demo.dir/sort/mergerSort.cpp.o.provides
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.provides: CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.provides
 
-CMakeFiles/demo.dir/sort/mergerSort.cpp.o.provides.build: CMakeFiles/demo.dir/sort/mergerSort.cpp.o
+CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.provides.build: CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o
 
 
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles/demo.dir/sort/mergerSort.cpp.o"
+"CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
-demo: CMakeFiles/demo.dir/sort/mergerSort.cpp.o
+demo: CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: CMakeFiles/demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sanyinchen/CLionProjects/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable demo"
@@ -99,7 +99,7 @@ CMakeFiles/demo.dir/build: demo
 
 .PHONY : CMakeFiles/demo.dir/build
 
-CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/sort/mergerSort.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o.requires
 
 .PHONY : CMakeFiles/demo.dir/requires
 

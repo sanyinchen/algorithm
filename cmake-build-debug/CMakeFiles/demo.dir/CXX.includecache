@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/sanyinchen/CLionProjects/algorithm/sort/mergerSort.cpp
+/Users/sanyinchen/CLionProjects/algorithm/aizu_judge/ALDS1_2_B_Selection_Sort.cpp
 iostream
 -
-vector
--
-stack
+cstdio
 -
 

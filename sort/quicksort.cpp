@@ -116,12 +116,12 @@ int main() {
 
     b = quickSoryWithoutRecursion(a);
 
-    cout << "quick sort by no recursion" << endl;
+    cout << "quick sort by no partition" << endl;
     for (int i = 0; i < b.size(); i++) {
         cout << b[i] << " ";
     }
     cout << endl;
-    cout << "quick sort by recursion" << endl;
+    cout << "quick sort by partition" << endl;
     for (int i = 0; i < b.size(); i++) {
         cout << b[i] << " ";
     }

@@ -160,14 +160,14 @@ int main() {
 
     int a[] = {5, 2, 4, 7, 1, -1, 2, 6};
 
-    cout << "---recursion-----" << endl;
+    cout << "---partition-----" << endl;
 
     int *r = mergeSort(a, 0, 7);
 
     for (int i = 0; i < 8; i++) {
         cout << r[i] << " ";
     }
-    cout <<endl<< "---no recursion-----" << endl;
+    cout <<endl<< "---no partition-----" << endl;
     vector<int> res = mergeSortNoRecursion(a, 8);
     for (int i = 0; i < res.size(); i++) {
         cout << res[i] << " ";

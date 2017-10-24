@@ -7,5 +7,5 @@ set(CMAKE_CXX_STANDARD 11)
 
 #set(SOURCE_FILES sort/insertSort.cpp)
 
-set(SOURCE_FILES sort/mergerSort.cpp)
+set(SOURCE_FILES aizu_judge/ALDS1_2_B_Selection_Sort.cpp)
 add_executable(demo ${SOURCE_FILES})

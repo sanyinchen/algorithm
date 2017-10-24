@@ -123,32 +123,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-sort/mergerSort.o: sort/mergerSort.cpp.o
+aizu_judge/ALDS1_2_B_Selection_Sort.o: aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o
 
-.PHONY : sort/mergerSort.o
+.PHONY : aizu_judge/ALDS1_2_B_Selection_Sort.o
 
 # target to build an object file
-sort/mergerSort.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.o
-.PHONY : sort/mergerSort.cpp.o
+aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o
+.PHONY : aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o
 
-sort/mergerSort.i: sort/mergerSort.cpp.i
+aizu_judge/ALDS1_2_B_Selection_Sort.i: aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i
 
-.PHONY : sort/mergerSort.i
+.PHONY : aizu_judge/ALDS1_2_B_Selection_Sort.i
 
 # target to preprocess a source file
-sort/mergerSort.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.i
-.PHONY : sort/mergerSort.cpp.i
+aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i
+.PHONY : aizu_judge/ALDS1_2_B_Selection_Sort.cpp.i
 
-sort/mergerSort.s: sort/mergerSort.cpp.s
+aizu_judge/ALDS1_2_B_Selection_Sort.s: aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s
 
-.PHONY : sort/mergerSort.s
+.PHONY : aizu_judge/ALDS1_2_B_Selection_Sort.s
 
 # target to generate assembly for a file
-sort/mergerSort.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sort/mergerSort.cpp.s
-.PHONY : sort/mergerSort.cpp.s
+aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s
+.PHONY : aizu_judge/ALDS1_2_B_Selection_Sort.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... demo"
-	@echo "... sort/mergerSort.o"
-	@echo "... sort/mergerSort.i"
-	@echo "... sort/mergerSort.s"
+	@echo "... aizu_judge/ALDS1_2_B_Selection_Sort.o"
+	@echo "... aizu_judge/ALDS1_2_B_Selection_Sort.i"
+	@echo "... aizu_judge/ALDS1_2_B_Selection_Sort.s"
 .PHONY : help
 
 

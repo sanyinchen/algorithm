@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/demo.dir/sort/mergerSort.cpp.o  -o demo 
+/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o  -o demo 

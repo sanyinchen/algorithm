@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/demo.dir/sort/mergerSort.cpp.o"
+  "CMakeFiles/demo.dir/aizu_judge/ALDS1_2_B_Selection_Sort.cpp.o"
   "demo.pdb"
   "demo"
 )
