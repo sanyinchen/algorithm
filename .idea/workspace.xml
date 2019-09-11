@@ -12,7 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ca3442-5f9d-45ee-851d-d118ab28899a" name="Default" comment="[feature] algorithm update">
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/ZeroEvenOdd_1116.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../demo/cmake-build-debug/" />
@@ -47,27 +48,6 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1114.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#1550#1551#0" expanded="true" />
-                <element signature="e#1623#1624#0" expanded="true" />
-                <element signature="e#1993#1994#0" expanded="true" />
-                <element signature="e#2057#2058#0" expanded="true" />
-                <element signature="e#2391#2392#0" expanded="true" />
-                <element signature="e#2474#2475#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2965#2966#0" expanded="true" />
-                <element signature="e#3371#3372#0" expanded="true" />
-                <element signature="e#3456#3457#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1117.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -87,14 +67,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/ZeroEvenOdd_1116.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="190">
+              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_19.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="29" selection-end-column="13" />
+              <folding>
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -163,19 +165,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicInteger.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="145" selection-start-line="11" selection-end-line="145" />
-              <folding>
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -194,6 +183,7 @@
       <find>unsafe</find>
       <find>set</find>
       <find>cout</find>
+      <find>sys</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -233,6 +223,8 @@
         <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1114.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1117.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/leet_code/ZeroEvenOdd_1116.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_19.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java" />
       </list>
     </option>
   </component>
@@ -293,7 +285,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568189730271" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568202917890" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -325,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZeroEvenOdd_1116">
+  <component name="RunManager" selected="Application.Link_Solution_24">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="demo" TARGET_NAME="demo" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -468,19 +460,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration name="Algorithm_20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leet_code.Algorithm_20" />
-      <module name="java.java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leet_code.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Concurrency_1114" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leet_code.Concurrency_1114" />
       <module name="java.java.main" />
@@ -496,6 +475,32 @@
     </configuration>
     <configuration name="Concurrency_1117" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leet_code.Concurrency_1117" />
+      <module name="java.java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leet_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Link_Solution_19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code.Link_Solution_19" />
+      <module name="java.java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leet_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Link_Solution_24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code.Link_Solution_24" />
       <module name="java.java.main" />
       <extension name="coverage">
         <pattern>
@@ -539,10 +544,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Link_Solution_24" />
+        <item itemvalue="Application.Link_Solution_19" />
         <item itemvalue="Application.ZeroEvenOdd_1116" />
         <item itemvalue="Application.Concurrency_1117" />
         <item itemvalue="Application.Concurrency_1114" />
-        <item itemvalue="Application.Algorithm_20" />
       </list>
     </recent_temporary>
   </component>
@@ -584,7 +590,7 @@
       <workItem from="1493112760046" duration="3279000" />
       <workItem from="1568122183967" duration="16000" />
       <workItem from="1568122212426" duration="46000" />
-      <workItem from="1568122271402" duration="30688000" />
+      <workItem from="1568122271402" duration="39721000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] struct update">
       <created>1568122483530</created>
@@ -607,11 +613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568179595608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[feature] algorithm update">
+      <created>1568190211137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568190211137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153111000" />
+    <option name="totallyTimeSpent" value="162144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,9 +637,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15973377" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15973377" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -636,8 +648,8 @@
       <window_info anchor="bottom" id="Build" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26868907" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3856988" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26868907" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45070422" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -671,6 +683,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="[feature] algorithm update" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="left" />
@@ -1035,11 +1063,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/ZeroEvenOdd_1116.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="190">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_19.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
         </state>
       </provider>
     </entry>
