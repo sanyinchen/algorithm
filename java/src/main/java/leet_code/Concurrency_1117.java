@@ -1,15 +1,11 @@
 package leet_code;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.IntBinaryOperator;
-import java.util.function.IntUnaryOperator;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
-import sun.misc.Lock;
-import sun.misc.Unsafe;
 
 /**
  * Created b sanyinchen on 19-9-10.
@@ -24,8 +20,6 @@ import sun.misc.Unsafe;
 class Concurrency_1117 {
     public static class H2O {
 
-        private static final Object ATOMIC_LOCK = new Object();
-
         public H2O() {
 
         }
@@ -33,9 +27,10 @@ class Concurrency_1117 {
         private volatile AtomicInteger HNumber = new AtomicInteger(0);
         private volatile AtomicInteger ONumber = new AtomicInteger(0);
 
-        private final Object hGenLock = new Object();
-        private final Object oGenLock = new Object();
-        private final Object wholeGen = new Object();
+
+        private final ReentrantLock mLock = new ReentrantLock();
+        private final Condition hGenLock = mLock.newCondition();
+        private final Condition oGenLock = mLock.newCondition();
 
 
         private boolean hGenAble() {
@@ -49,17 +44,17 @@ class Concurrency_1117 {
 
         private boolean h2oGenned() {
             if (!hGenAble() && !oGenAble()) {
+                try {
+                    mLock.lock();
+                    HNumber.set(0);
+                    hGenLock.signalAll();
 
-                synchronized (hGenLock) {
-                    HNumber.clear();
-                    hGenLock.notifyAll();
-                }
-                synchronized (oGenLock) {
-                    ONumber.clear();
-                    oGenLock.notifyAll();
-                }
-                synchronized (wholeGen) {
-                    wholeGen.notifyAll();
+                    ONumber.set(0);
+                    oGenLock.signalAll();
+                } finally {
+                    if (mLock.isHeldByCurrentThread()) {
+                        mLock.unlock();
+                    }
                 }
                 return true;
             }
@@ -67,78 +62,43 @@ class Concurrency_1117 {
         }
 
         public void hydrogen(Runnable releaseHydrogen) throws InterruptedException {
-            synchronized (hGenLock) {
+            try {
+                mLock.lock();
                 if (!hGenAble()) {
                     while (!hGenAble()) {
-                        hGenLock.wait();
+                        hGenLock.await();
                     }
 
                 }
                 releaseHydrogen.run();
                 HNumber.incrementAndGet();
-            }
-            if (!h2oGenned() && !hGenAble()) {
-                synchronized (wholeGen) {
-                    while (!h2oGenned() && !hGenAble()) {
-                        wholeGen.wait();
-                    }
+            } finally {
+
+                if (mLock.isHeldByCurrentThread()) {
+                    mLock.unlock();
                 }
             }
+            h2oGenned();
 
         }
 
         public void oxygen(Runnable releaseOxygen) throws InterruptedException {
-            synchronized (oGenLock) {
+            try {
+                mLock.lock();
                 if (!oGenAble()) {
                     while (!oGenAble()) {
-                        oGenLock.wait();
+                        oGenLock.await();
                     }
                 }
 
                 releaseOxygen.run();
                 ONumber.incrementAndGet();
-
-            }
-
-            if (!h2oGenned() && !hGenAble()) {
-                synchronized (wholeGen) {
-                    while (!h2oGenned() && !hGenAble()) {
-                        wholeGen.wait();
-                    }
+            } finally {
+                if (mLock.isHeldByCurrentThread()) {
+                    mLock.unlock();
                 }
             }
-        }
-
-
-        public class AtomicInteger {
-
-            private volatile int value;
-
-
-            public AtomicInteger(int var1) {
-                this.value = var1;
-            }
-
-            public final int get() {
-                return this.value;
-            }
-
-            public final void clear() {
-                synchronized (ATOMIC_LOCK) {
-                    this.value = 0;
-                }
-            }
-
-
-            public final int incrementAndGet() {
-                synchronized (ATOMIC_LOCK) {
-                    value++;
-                    return value;
-                }
-
-            }
-
-
+            h2oGenned();
         }
 
     }
