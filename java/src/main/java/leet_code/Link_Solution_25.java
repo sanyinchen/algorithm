@@ -89,9 +89,9 @@ class Link_Solution_25 {
     public static ListNode createMockList() {
         ListNode header = new ListNode(1);
         header.next = new ListNode(2);
-//        header.next.next = new ListNode(3);
-//        header.next.next.next = new ListNode(4);
-//        header.next.next.next.next = new ListNode(5);
+        header.next.next = new ListNode(3);
+        header.next.next.next = new ListNode(4);
+        header.next.next.next.next = new ListNode(5);
 
         return header;
 
