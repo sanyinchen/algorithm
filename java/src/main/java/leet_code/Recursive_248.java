@@ -1,5 +1,6 @@
 package leet_code;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,7 +74,7 @@ class Recursive_248 {
         }
 
 
-        public List<String> findStrobogrammatic(int n) {
+        private List<String> findStrobogrammatic(int n) {
             if (n == 1) {
                 return F1;
             }
@@ -87,6 +88,61 @@ class Recursive_248 {
             }
             return resList;
         }
+
+        private int getNumberDigit(BigInteger number) {
+            int digit = 1;
+
+            while ((number = number.divide(BigInteger.TEN)).compareTo(BigInteger.ZERO) != 0) {
+                digit++;
+            }
+            return digit;
+        }
+
+        public int strobogrammaticInRange(String low, String high) {
+            BigInteger lowBigInt = new BigInteger(low);
+            BigInteger highBigInt = new BigInteger(high);
+            if (highBigInt.compareTo(lowBigInt) < 0) {
+                return 0;
+            }
+            int lowNumberDigit = getNumberDigit(lowBigInt);
+            int highNumberDigit = getNumberDigit(highBigInt);
+            int sum = 0;
+            if (lowNumberDigit == highNumberDigit) {
+                List<String> theSames = findStrobogrammatic(lowNumberDigit);
+                for (String item : theSames) {
+                    BigInteger itemBig = new BigInteger(item);
+                    if (itemBig.compareTo(highBigInt) <= 0 && itemBig.compareTo(lowBigInt) >= 0) {
+                        sum++;
+                    }
+                }
+                return sum;
+            } else {
+
+                List<String> lowNumbers = findStrobogrammatic(lowNumberDigit);
+                List<String> highNumbers = findStrobogrammatic(highNumberDigit);
+                for (String item : lowNumbers) {
+                    BigInteger itemBig = new BigInteger(item);
+                    if (itemBig.compareTo(lowBigInt) >= 0) {
+                        sum++;
+                    }
+                }
+                for (String item : highNumbers) {
+                    BigInteger itemBig = new BigInteger(item);
+                    if (itemBig.compareTo(highBigInt) <= 0) {
+                        sum++;
+                    }
+                }
+                lowNumberDigit++;
+                highNumberDigit--;
+                while (highNumberDigit >= lowNumberDigit) {
+                    sum += findStrobogrammatic(highNumberDigit).size();
+                    highNumberDigit--;
+                }
+
+
+                return sum;
+            }
+        }
     }
 
 
@@ -94,9 +150,7 @@ class Recursive_248 {
         long time1 = System.currentTimeMillis();
         Solution solution = new Solution();
 
-        solution.findStrobogrammatic(3).forEach((item) -> {
-            System.out.print(item + " ");
-        });
+        System.out.println("res==>" + solution.strobogrammaticInRange("1", "100"));
 //        System.out.println();
 //        solution.findStrobogrammatic(3).forEach((item) -> {
 //            System.out.print(item + " ");

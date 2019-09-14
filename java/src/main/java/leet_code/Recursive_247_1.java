@@ -94,9 +94,8 @@ class Recursive_247_1 {
         long time1 = System.currentTimeMillis();
         Solution solution = new Solution();
 
-        solution.findStrobogrammatic(3).forEach((item) -> {
-            System.out.print(item + " ");
-        });
+        int size=solution.findStrobogrammatic(5).size();
+        System.out.println("size:"+size);
 //        System.out.println();
 //        solution.findStrobogrammatic(3).forEach((item) -> {
 //            System.out.print(item + " ");
