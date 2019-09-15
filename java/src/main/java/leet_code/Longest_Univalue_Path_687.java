@@ -1,5 +1,7 @@
 package leet_code;
 
+import com.sun.org.apache.regexp.internal.RE;
+
 import leet_code.common.TreeNode;
 
 /**
@@ -15,38 +17,46 @@ class Longest_Univalue_Path_687 {
     static class Solution {
 
         private int max = 0;
-        private int dep = 0;
 
-        private void treeScan(TreeNode root, int preValue) {
+        private int treeScan(TreeNode root, int preValue) {
             if (root == null) {
-                return;
+                return 0;
             }
-            // System.out.println("currentDep==>" + currentDep + " preValue:" + preValue);
-
-            if (root.val == preValue) {
-                dep++;
+            int tempMax = 0;
+            int left = treeScan(root.left, root.val);
+            int right = treeScan(root.right, root.val);
+            if (root.left != null && root.val == root.left.val) {
+                left++;
             } else {
-                dep = 1;
+                left = 0;
+            }
+            if (root.right != null && root.val == root.right.val) {
+                right++;
+            } else {
+                right = 0;
             }
 
-            System.out.println("dep==>" + dep + " v:" + root.val);
+            tempMax = Math.max(left, right);
+            if (root.right != null && root.left != null) {
+                if (root.right.val == root.val && root.val == root.left.val) {
+                    tempMax = left + right;
 
-            if (max < dep) {
-                max = dep;
+                }
             }
 
-            treeScan(root.left, root.val);
-            treeScan(root.right, root.val);
+            max = Math.max(max, tempMax);
+            return Math.max(left, right);
         }
 
         public int longestUnivaluePath(TreeNode root) {
+
             if (root == null || (root.right == null && root.left == null)) {
                 return 0;
             }
             max = 0;
-            dep = 0;
+
             treeScan(root, root.val);
-            return max - 1;
+            return max;
         }
     }
 
@@ -68,7 +78,14 @@ class Longest_Univalue_Path_687 {
 //        treeNode.right.right = new TreeNode(5);
 
         TreeNode treeNode = new TreeNode(1);
-        treeNode.left = new TreeNode(1);
+        treeNode.right = new TreeNode(1);
+        treeNode.right.right = new TreeNode(1);
+        treeNode.right.left = new TreeNode(1);
+        treeNode.right.right.right = new TreeNode(1);
+        treeNode.right.right.left = new TreeNode(1);
+        treeNode.right.right.right = new TreeNode(1);
+
+
         //treeNode.right = new TreeNode(1);
 
         return treeNode;
