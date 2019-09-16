@@ -14,34 +14,33 @@ import java.util.List;
 
 class K_th_symbol_in_grammar_779 {
     static class Solution {
-        private String kthGrammarCreate(int n) {
-            if (n == 1) {
-                return "0";
+
+        private int kthGrammar(long N, long K) {
+            if (N == 0) {
+                return 0;
             }
-            String str = kthGrammarCreate(n - 1);
-            System.out.println("str:" + str + " :" + str.length());
-            StringBuilder newStringBuilder = new StringBuilder();
-            for (int i = 0; i < str.length(); i++) {
-                if (str.charAt(i) == '0') {
-                    newStringBuilder.append("01");
-                } else {
-                    newStringBuilder.append("10");
-                }
+            long number = 2 << (N - 1);
+            if (K <= number / 2) {
+                return kthGrammar(N - 1, K);
+            } else {
+                return 1^kthGrammar(N, K - number / 2);
             }
-            return newStringBuilder.toString();
+
         }
 
         public int kthGrammar(int N, int K) {
-            String str = kthGrammarCreate(N);
-            if (K > str.length()) {
-                throw new RuntimeException("error");
+            if (N == 1) {
+                return 0;
             }
-            System.out.println("str:" + str + " " + str.length());
-            return Integer.valueOf(str.charAt(K - 1) + "");
+            return kthGrammar((long) N - 1, (long) K);
         }
     }
 
     public static void main(String[] args) {
-        System.out.println("==>" + new Solution().kthGrammar(10, 5));
+        // long sum = 2 << 29;
+        // System.out.println("sum:" + sum);
+        int a = 0b1;
+        //System.out.println(~(~(a)));
+        System.out.println("==>" + new Solution().kthGrammar(2, 1));
     }
 }
