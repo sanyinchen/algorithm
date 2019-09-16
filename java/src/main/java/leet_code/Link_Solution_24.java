@@ -1,5 +1,7 @@
 package leet_code;
 
+import java.util.List;
+
 /**
  * Created by sanyinchen on 19-9-11.
  * <p>
@@ -23,31 +25,37 @@ class Link_Solution_24 {
 
     static class Solution {
 
-        private ListNode nodeSwap(ListNode first, ListNode second) {
+        private ListNode[] nodeSwap(ListNode first, ListNode second) {
             if (first == null || second == null) {
-                return first;
+                return new ListNode[]{first, first};
             }
 
             ListNode secondOldNext = second.next;
             second.next = first;
             first.next = secondOldNext;
 
-            return second;
+            return new ListNode[]{first, second};
+        }
+
+        public ListNode doSwapPairs(ListNode head, ListNode preNode) {
+            if (head == null) {
+                return null;
+            }
+            ListNode[] nodes = nodeSwap(head, head.next);
+            preNode.next = nodes[1];
+            return doSwapPairs(nodes[0].next, nodes[0]);
         }
 
         public ListNode swapPairs(ListNode head) {
-
-            if (head == null || head.next == null) {
+            if (head == null) {
+                return null;
+            }
+            if (head.next == null) {
                 return head;
             }
-            ListNode oldHead = new ListNode(-1);
-            oldHead.next = nodeSwap(head, head.next);
-            ListNode preNode = head;
-            for (ListNode index = head.next; index != null; index = index.next) {
-                preNode.next = nodeSwap(index, index.next);
-                preNode = index;
-            }
-            return oldHead.next;
+            ListNode emptyNode = new ListNode(-1);
+            doSwapPairs(head, emptyNode);
+            return emptyNode.next;
         }
     }
 
