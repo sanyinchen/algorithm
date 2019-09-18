@@ -21,106 +21,50 @@ import leet_code.common.TreeNode;
 
 class Unique_binary_search_trees_ii_95 {
     static class Solution {
-        Map<Integer, List<TreeNode>> memo = new HashMap();
+        Map<String, List<TreeNode>> memo = new HashMap();
 
-        //        private List<TreeNode> generateTreesHelper(int n) {
-//
-//        }
-        private int i = 0;
-        List<TreeNode> ans = new LinkedList();
-
-        public TreeNode generateTreesHelper(int n) {
-            System.out.println("get ===>n:" + n);
-
-            // List<TreeNode> ans = new LinkedList();
-            if (n == 1) {
-                new TreeNode(n);
-            } else {
-                for (int x = 0; x < n; ++x) {
-                    int y = n - 1 - x;
-                    System.out.println("x:" + x + " y:" + y);
-                    TreeNode left = generateTreesHelper(x);
-                    TreeNode right = generateTreesHelper(y);
-                    TreeNode rootNode = new TreeNode(n);
-                    rootNode.left = left;
-                    rootNode.right = right;
-                    ans.add(rootNode);
-                    System.out.println("=========>i" + (++i));
-//                        for (TreeNode left : lefts) {
-//                            System.out.println("==>n:" + n + " left:" + left.val + " right:null");
-//                            TreeNode rootNode = new TreeNode(n);
-//                            rootNode.left = left;
-//                            rootNode.right = null;
-//                            ans.add(rootNode);
-//                            // System.out.println("rights:" + rights.size());
-//                            List<TreeNode> rights = generateTrees(y);
-//                            System.out.println("lefts:" + lefts.size());
-//                            for (TreeNode right : rights) {
-//                                System.out.println("==>n:" + n + " left:" + left.val + " right:" + right.val);
-//                                TreeNode rootNode2 = new TreeNode(n);
-//                                rootNode2.left = left;
-//                                rootNode2.right = right;
-//                                ans.add(rootNode2);
-//
-//                            }
-//                        }
-
-                }
-            }
-
-            return null;
+        private String getStrKey(int start, int end) {
+            return start + "_" + end;
         }
 
-        public List<TreeNode> generateTrees(int n) {
-//            generateTreesHelper(n);
-//            return ans;
-//        }
-            System.out.println("get ===>n:" + n);
-            if (!memo.containsKey(n)) {
+        public List<TreeNode> generateTreesHelper(int start, int end) {
+            if (!memo.containsKey(getStrKey(start, end))) {
                 List<TreeNode> ans = new LinkedList();
-                if (n == 1) {
-                    ans.add(new TreeNode(n));
+                if (start > end) {
+                    ans.add(null);
+                    return ans;
                 } else {
-                    for (int x = 0; x < n; ++x) {
-                        int y = n - 1 - x;
-                        //System.out.println("x:" + x + " y:" + y);
-                        List<TreeNode> lefts = generateTrees(x);
-                        List<TreeNode> rights = generateTrees(y);
-                        System.out.println("lefts:" + lefts.size() + "rights:" + rights.size());
-                        TreeNode left = new TreeNode(0);
-                        TreeNode right = new TreeNode(0);
-                        TreeNode root = new TreeNode(0);
-                        if (lefts.size() != 0) {
-                            root.left = left;
+                    for (int i = start; i <= end; i++) {
+                        List<TreeNode> lefts = generateTreesHelper(start, i - 1);
+                        List<TreeNode> rights = generateTreesHelper(i + 1, end);
+                        for (TreeNode left : lefts) {
+                            for (TreeNode right : rights) {
+                                TreeNode rootNode = new TreeNode(i);
+                                rootNode.left = left;
+                                rootNode.right = right;
+                                ans.add(rootNode);
+                            }
                         }
-                        if (rights.size() != 0) {
-                            root.right = right;
-                        }
-                        ans.add(root);
-                        System.out.println("=========>i" + (++i));
-
-//                        System.out.println("=========>i" + (++i));
-//                        for (TreeNode left : lefts) {
-//                            for (TreeNode right : rights) {
-//                                System.out.println("==>n:" + n + " left:" + left.val + " right:" + right.val);
-//                                TreeNode rootNode2 = new TreeNode(n);
-//                                rootNode2.left = left;
-//                                rootNode2.right = right;
-//                                ans.add(rootNode2);
-//                            }
-//                        }
 
                     }
                 }
-                memo.put(n, ans);
+                memo.put(getStrKey(start, end), ans);
             }
 
-            return memo.get(n);
+            return memo.get(getStrKey(start, end));
+        }
+
+        public List<TreeNode> generateTrees(int n) {
+            if (n==0){
+                return new LinkedList<>();
+            }
+
+            return generateTreesHelper(1, n);
         }
     }
 
     public static void main(String[] args) {
-        List<TreeNode> res = new Solution().generateTrees(5);
+        List<TreeNode> res = new Solution().generateTrees(1);
         System.out.println(res.size());
     }
 }
