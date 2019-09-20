@@ -17,316 +17,44 @@ import java.util.Set;
 
 class Walls_and_gates_286 {
     static class Solution {
-        private Map<String, Integer> cache = new HashMap<>();
 
-        private String getCacheKey(int i, int j) {
-            return i + "_" + j;
-        }
 
-        public boolean wallsAndGatesHelper(int[][] rooms, int i, int j) {
+        public void wallsAndGatesHelper(int[][] rooms, int i, int j, int step) {
             if (i < 0 || j < 0) {
-                return false;
+                return;
             }
             if (i >= rooms.length) {
-                return false;
+                return;
             }
             if (j >= rooms[i].length) {
-                return false;
+                return;
             }
-            if (rooms[i][j] != Integer.MAX_VALUE) {
-                if (rooms[i][j] >= 0) {
-                    return true;
-                } else {
-                    return false;
-                }
+            if (rooms[i][j] < step) {
+                return;
             }
-//            if (wallsAndGatesHelper(rooms, i - 1, j - 1)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j]++;
-//                }
-//            }
-            if (cache.containsKey(getCacheKey(i - 1, j - 1))) {
-                int v = cache.get(getCacheKey(i - 1, j - 1));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j - 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i - 1, j - 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j - 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
+            rooms[i][j] = step;
+            // 上
+            wallsAndGatesHelper(rooms, i - 1, j, step + 1);
+            // 下
+            wallsAndGatesHelper(rooms, i + 1, j, step + 1);
+            // 左
+            wallsAndGatesHelper(rooms, i, j - 1, step + 1);
+            // 右
+            wallsAndGatesHelper(rooms, i, j + 1, step + 1);
 
-
-            if (cache.containsKey(getCacheKey(i - 1, j))) {
-                int v = cache.get(getCacheKey(i - 1, j));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i - 1, j)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-
-
-            if (cache.containsKey(getCacheKey(i - 1, j + 1))) {
-                int v = cache.get(getCacheKey(i - 1, j + 1));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j + 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i - 1, j + 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j + 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-
-
-            if (cache.containsKey(getCacheKey(i, j - 1))) {
-                int v = cache.get(getCacheKey(i, j - 1));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i][j - 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i, j - 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i][j - 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-
-
-            if (cache.containsKey(getCacheKey(i, j + 1))) {
-                int v = cache.get(getCacheKey(i, j + 1));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i][j + 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i, j + 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i][j + 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-            if (cache.containsKey(getCacheKey(i + 1, j - 1))) {
-                int v = cache.get(getCacheKey(i + 1, j - 1));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j - 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i + 1, j - 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j - 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-
-            if (cache.containsKey(getCacheKey(i + 1, j))) {
-                int v = cache.get(getCacheKey(i + 1, j));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i + 1, j)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-
-
-            if (cache.containsKey(getCacheKey(i + 1, j + 1))) {
-                int v = cache.get(getCacheKey(i + 1, j + 1));
-                if (v >= 0 && v != Integer.MAX_VALUE) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j + 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            } else {
-                if (wallsAndGatesHelper(rooms, i + 1, j + 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 0;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j + 1] + 1;
-                    }
-                    cache.put(getCacheKey(i, j), rooms[i][j]);
-                }
-            }
-//            if (wallsAndGatesHelper(rooms, i - 1, j + 1)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j]++;
-//                }
-//            }
-//            if (wallsAndGatesHelper(rooms, i, j - 1)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j]++;
-//                }
-//            }
-//            if (wallsAndGatesHelper(rooms, i, j + 1)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j] = rooms[i][j + 1] + 1;
-//                }
-//            }
-//            if (wallsAndGatesHelper(rooms, i + 1, j - 1)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j]++;
-//                }
-//            }
-
-//            if (wallsAndGatesHelper(rooms, i + 1, j)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j] = rooms[i + 1][j] + 1;
-//                }
-//            }
-//            if (wallsAndGatesHelper(rooms, i + 1, j + 1)) {
-//                if (rooms[i][j] == Integer.MAX_VALUE) {
-//                    rooms[i][j] = 0;
-//                } else {
-//                    rooms[i][j] = rooms[i + 1][j + 1] + 1;
-//                }
-//            }
-
-            return false;
-        }
-
-        private Set<String> visited = new HashSet<>();
-
-        public boolean wallsAndGatesHelper2(int[][] rooms, int i, int j) {
-            // System.out.println("i:" + i + " j:" + j);
-            if (i < 0 || j < 0) {
-                return false;
-            }
-            if (i >= rooms.length) {
-                return false;
-            }
-            if (j >= rooms[i].length) {
-                return false;
-            }
-            if (rooms[i][j] != Integer.MAX_VALUE) {
-                if (rooms[i][j] >= 0) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-
-            if (!visited.contains(getCacheKey(i, j))) {
-
-                visited.add(getCacheKey(i, j));
-
-                if (wallsAndGatesHelper2(rooms, i - 1, j)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 1;
-                    } else {
-                        rooms[i][j] = rooms[i - 1][j] + 1;
-                    }
-                }
-
-                if (wallsAndGatesHelper2(rooms, i, j + 1)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 1;
-                    } else {
-                        rooms[i][j] = rooms[i][j + 1] + 1;
-                    }
-                }
-
-
-                if (wallsAndGatesHelper2(rooms, i + 1, j)) {
-                    if (rooms[i][j] == Integer.MAX_VALUE) {
-                        rooms[i][j] = 1;
-                    } else {
-                        rooms[i][j] = rooms[i + 1][j] + 1;
-                    }
-                }
-            }
-
-
-            return false;
         }
 
         public void wallsAndGates(int[][] rooms) {
-            wallsAndGatesHelper2(rooms, 0, 0);
-//            for (int i = 0; i < rooms.length; i++) {
-//                for (int j = 0; j < rooms[i].length; j++) {
-//                    wallsAndGatesHelper2(rooms, i, j);
-//                }
-//            }
+            if (rooms == null) {
+                return;
+            }
+            for (int i = 0; i < rooms.length; i++) {
+                for (int j = 0; j < rooms[i].length; j++) {
+                    if (rooms[i][j] == 0) {
+                        wallsAndGatesHelper(rooms, i, j, 0);
+                    }
+                }
+            }
         }
     }
 
@@ -334,26 +62,11 @@ class Walls_and_gates_286 {
         int[][] x = new int[][]{{2147483647, -1, 0, 2147483647}, {2147483647, 2147483647, 2147483647, -1},
                 {2147483647, -1,
                         2147483647, -1}, {0, -1, 2147483647, 2147483647}};
-        for (int i = 0; i < x.length; i++) {
-            for (int j = 0; j < x.length; j++) {
-                if (x[i][j] == Integer.MAX_VALUE) {
-                    System.out.print("INF ");
-                } else {
-                    System.out.print(x[i][j] + " ");
-                }
-            }
-            System.out.println();
-        }
-        System.out.println("=========》");
+        // System.out.println(x.length);
         new Solution().wallsAndGates(x);
         for (int i = 0; i < x.length; i++) {
             for (int j = 0; j < x.length; j++) {
-                if (x[i][j] == Integer.MAX_VALUE) {
-                    System.out.print("INF ");
-                } else {
-                    System.out.print(x[i][j] + " ");
-                }
-
+                System.out.print(x[i][j] + " ");
             }
             System.out.println();
         }
