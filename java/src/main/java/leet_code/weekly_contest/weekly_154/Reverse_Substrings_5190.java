@@ -1,4 +1,4 @@
-package leet_code.weekly_contest.weely_154;
+package leet_code.weekly_contest.weekly_154;
 
 import java.util.Stack;
 
