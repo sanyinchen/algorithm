@@ -1,4 +1,4 @@
-package leet_code.other;
+package leet_code.weekly_contest.other;
 
 import java.util.HashSet;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package leet_code.other;
+package leet_code.weekly_contest.other;
 
 /**
  * Created by sanyinchen on 19-9-24.
