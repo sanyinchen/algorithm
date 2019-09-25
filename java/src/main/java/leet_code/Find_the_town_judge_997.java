@@ -1,36 +1,43 @@
 package leet_code;
 
+
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
 
-import algorithm.map.digraph.DigBreadthFirstPaths;
+import java.util.Set;
 
-
-public class Find_the_town_judge {
+public class Find_the_town_judge_997 {
     public static class Solution {
 
-        pr
+        private Set<String> markCache = new HashSet<>();
+
+
         public int findJudge(int N, int[][] trust) {
+            markCache.clear();
             JudgeDigGraph judgeDigGraph = new JudgeDigGraph(N + 1);
             for (int i = 0; i < trust.length; i++) {
+                markCache.add(trust[i][0] + "_" + trust[i][1]);
                 judgeDigGraph.addEdge(trust[i][0], trust[i][1]);
             }
             for (int i = 1; i < judgeDigGraph.V(); i++) {
                 System.out.println("===>" + i + " " + judgeDigGraph.adjSize(i));
+                boolean isJudge = true;
                 if (judgeDigGraph.adjSize(i) == 0) {
-                    boolean isJudge = true;
                     for (int j = 1; j < judgeDigGraph.V(); j++) {
                         if (j == i) {
                             continue;
                         }
-                        System.out.println("j:" + j);
-
+                        if (!markCache.contains(j + "_" + i)) {
+                            isJudge = false;
+                            break;
+                        }
                     }
-                    if (!isJudge) {
+                    if (isJudge) {
+                        return i;
+                    } else {
                         continue;
                     }
 
-                    return i;
                 }
             }
             return -1;
@@ -74,20 +81,14 @@ public class Find_the_town_judge {
                 return adj[v].iterator();
             }
 
-            public boolean isJudge(int v) {
-                Iterator<Integer> i terator = adj(v);
+            public int adjSize(int v) {
+                Iterator<Integer> iterator = adj(v);
                 int size = 0;
                 while (iterator.hasNext()) {
                     size++;
                     iterator.next();
                 }
-                if (size != 0) {
-                    return false;
-                }
-
-
-
-                return true;
+                return size;
             }
 
 
@@ -134,11 +135,18 @@ public class Find_the_town_judge {
     }
 
     public static void main(String[] args) {
-        int n = 3;
+        int n = 2;
         int[][] data = new int[][]{
-                {1, 2},
-                {2, 3}
+                {1, 2}
         };
         System.out.println("==>" + new Solution().findJudge(n, data));
+
+
+//        int n = 3;
+//        int[][] data = new int[][]{
+//                {1, 2},
+//                {2, 3}
+//        };
+//        System.out.println("==>" + new Solution().findJudge(n, data));
     }
 }
