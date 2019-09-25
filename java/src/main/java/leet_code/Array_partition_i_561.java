@@ -21,10 +21,16 @@ class Array_partition_i_561 {
             }
             Arrays.sort(nums);
             int sum = 0;
-            for (int i = 0, j = nums.length - 1; i < j && i + 1 < nums.length / 2; i += 2, j -= 2) {
+            int mid = nums.length / 2;
+            if (mid % 2 != 0) {
+                mid--;
+                sum += Math.min(nums[mid], nums[mid + 1]);
+            }
+            for (int i = 0, j = nums.length - 1; i < j && i + 1 < mid; i += 2, j -= 2) {
                 sum += Math.min(nums[i], nums[i + 1]);
                 sum += Math.min(nums[j], nums[j - 1]);
             }
+
             return sum;
         }
     }
