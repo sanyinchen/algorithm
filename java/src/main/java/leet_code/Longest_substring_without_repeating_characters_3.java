@@ -1,6 +1,8 @@
 package leet_code;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -13,43 +15,36 @@ import java.util.Set;
 
 class Longest_substring_without_repeating_characters_3 {
     static class Solution {
-        Set<Character> cache = new HashSet<>();
-
-        private void lengthOfLongestSubstringHelper(String s, int start, int step) {
-            if (start + step >= s.length()) {
-                return;
-            }
-            if (start != -1) {
-                System.out.println("start:" + start + " step:" + step + " " + s.substring(start, start + step));
-
-            }
-            for (int i = 1; i < s.length(); i++) {
-                lengthOfLongestSubstringHelper(s, start + 1, i);
-            }
-
-            //  System.out.println("==>" + max + " " + s.charAt(i));
-//            if (cache.contains(s.charAt(i))) {
-//                return max;
-//            }
-//            cache.add(s.charAt(i));
-            return;
-
-        }
-
         public int lengthOfLongestSubstring(String s) {
-            if (s == null) {
+            if (s == null || s.length() == 0) {
                 return 0;
             }
-            if (s.length() <= 1) {
-                return s.length();
+            int[] dp = new int[s.length()];
+            char[] content = s.toCharArray();
+            dp[0] = 1;
+            int max = dp[0];
+            Map<Character, Integer> cache = new HashMap<>();
+            cache.put(content[0], 0);
+            for (int i = 1; i < content.length; i++) {
+                if (!cache.containsKey(content[i])) {
+                    dp[i] = dp[i - 1] + 1;
+                    cache.put(content[i], i);
+                    max = max < dp[i] ? dp[i] : max;
+                } else {
+                    i = cache.get(content[i]) + 1;
+                    if (i >= content.length) {
+                        return max;
+                    }
+                    cache.clear();
+                    cache.put(content[i], i);
+                    dp[i] = 1;
+                }
             }
-            cache.clear();
-            lengthOfLongestSubstringHelper(s, -1, 1);
-            return 0;
+            return max;
         }
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().lengthOfLongestSubstring("abc"));
+        System.out.println(new Solution().lengthOfLongestSubstring("dvdf"));
     }
 }
