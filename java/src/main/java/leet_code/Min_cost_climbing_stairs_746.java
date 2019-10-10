@@ -1,8 +1,12 @@
 package leet_code;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.Stack;
 
 /**
@@ -17,44 +21,34 @@ import java.util.Stack;
 
 class Min_cost_climbing_stairs_746 {
     static class Solution {
-        private Map<Integer, Integer> cache = new HashMap<>();
-        private int min;
+        Map<Integer, Integer> marked = new HashMap<>();
 
-        private int climbStairsHelper(int[] cost, int n, Stack<Integer> res) {
-
+        private int climbStairsHelper(List<Integer> costs, int n) {
             if (n == 0) {
-                Stack<Integer> copied = (Stack<Integer>) res.clone();
-                int sum = 0;
-                while (copied.size() > 0) {
-                    int item = copied.peek();
-                    System.out.print(item + " ");
-                    sum += cost[item - 1];
-                    copied.pop();
-                }
-                if (min > sum) {
-                    min = sum;
-                }
-                System.out.println();
-                return 1;
+                return costs.get(0);
             }
             if (n < 0) {
-                return 0;
+                return Integer.MAX_VALUE;
             }
-            res.push(n);
-//            if (cache.containsKey(n)) {
-//                return cache.get(n);
-//            }
-            int sum = climbStairsHelper(cost, n - 1, res) + climbStairsHelper(cost, n - 2, res);
-            res.pop();
-            cache.put(n, sum);
-            return sum;
+            if (marked.containsKey(n)) {
+                return marked.get(n);
+            }
+            int minCost = Math.min(climbStairsHelper(costs, n - 1), climbStairsHelper(costs, n - 2)) + costs.get(n);
+            marked.put(n, minCost);
+            return minCost;
+
         }
 
 
         public int minCostClimbingStairs(int[] cost) {
-            min = Integer.MAX_VALUE;
-            climbStairsHelper(cost, cost.length, new Stack<>());
-            return min;
+            List<Integer> costs = new ArrayList<>();
+            costs.add(0);
+            for (int i = 0; i < cost.length; i++) {
+                costs.add(cost[i]);
+            }
+            costs.add(0);
+
+            return climbStairsHelper(costs, costs.size() - 1);
         }
     }
 
