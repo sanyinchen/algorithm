@@ -2,74 +2,61 @@ package leet_code;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Stack;
 
+/**
+ * Created by sanyinchen on 19-10-11.
+ *
+ * @author sanyinchen
+ * @version v0.1
+ * @since 19-10-11
+ */
 
-public class Solution_261 {
+class Is_graph_bipartite_785 {
     class Solution {
+        public boolean isBipartite(int[][] graph) {
+            Graph realGraph = new Graph(graph.length);
+            for (int i = 0; i < graph.length; i++) {
+                for (int j = 0; j < graph[i].length; j++) {
+                    realGraph.addEdge(i, graph[i][j]);
+                }
 
-
-        public boolean validTree(int n, int[][] edges) {
-            Graph graph = new Graph(n);
-            for (int i = 0; i < edges.length; i++) {
-                int[] item = edges[i];
-                graph.addEdge(item[0], item[1]);
             }
-            return new Cycle(graph).hasBeenTree();
-
+            return new BipartiteGraph(realGraph).isBipartiteGraph();
         }
 
-        public class Cycle {
-            private boolean[] marked;
-            private int[] edgeTo;
-            private int count = 0;
-            private boolean hasCycle = false;
+        private class BipartiteGraph {
+            final boolean[] bipartiteRecord;
+            final boolean[] marked;
+            boolean isBipartiteGraph;
 
-            public Cycle(Graph G) {
-                if (hasSelfLoop(G)) return;
-
-                marked = new boolean[G.V()];
-                edgeTo = new int[G.V()];
-                for (int v = 0; v < G.V(); v++)
-                    if (!marked[v]) {
-                        dfs(G, -1, v);
-                        count++;
-                    }
-            }
-
-            private boolean hasSelfLoop(Graph G) {
-                for (int v = 0; v < G.V(); v++) {
-                    for (int w : G.adj(v)) {
-                        if (v == w) {
-                            hasCycle = true;
-                            return true;
-                        }
+            public BipartiteGraph(Graph graph) {
+                bipartiteRecord = new boolean[graph.V()];
+                marked = new boolean[graph.V()];
+                isBipartiteGraph = true;
+                for (int s = 0; s < graph.V(); s++) {
+                    if (!marked[s]) {
+                        dfs(graph, s);
                     }
                 }
-                return false;
             }
 
-
-            public boolean hasBeenTree() {
-                return !hasCycle && count == 1;
+            public boolean isBipartiteGraph() {
+                return isBipartiteGraph;
             }
 
-
-            private void dfs(Graph G, int u, int v) {
+            private void dfs(Graph graph, int v) {
+                if (!isBipartiteGraph) {
+                    return;
+                }
                 marked[v] = true;
-                for (int w : G.adj(v)) {
-
-                    // short circuit if cycle already found
-                    if (hasCycle) return;
-
+                for (int w : graph.adj(v)) {
                     if (!marked[w]) {
-                        edgeTo[w] = v;
-                        dfs(G, v, w);
-                    }
-
-                    // check for cycle (but disregard reverse of edge leading to v)
-                    else if (w != u) {
-                        hasCycle = true;
+                        bipartiteRecord[w] = !bipartiteRecord[v];
+                        dfs(graph, w);
+                    } else {
+                        if (bipartiteRecord[v] == bipartiteRecord[w]) {
+                            isBipartiteGraph = false;
+                        }
                     }
                 }
             }
@@ -181,6 +168,7 @@ public class Solution_261 {
                 return new ListIterator<Item>(first);
             }
         }
+
     }
 
 }

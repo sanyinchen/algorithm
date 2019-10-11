@@ -11,10 +11,10 @@
  *
  *  % java Cycle tinyG.txt
  *  3 4 5 3 
- * 
+ *
  *  % java Cycle mediumG.txt 
  *  15 0 225 15 
- * 
+ *
  *  % java Cycle largeG.txt 
  *  996673 762 840164 4619 785187 194717 996673 
  *
@@ -22,25 +22,27 @@
 
 package edu.princeton.cs.algs4;
 
+import java.util.Scanner;
+
 /**
- *  The {@code Cycle} class represents a data type for 
- *  determining whether an undirected graph has a simple cycle.
- *  The <em>hasCycle</em> operation determines whether the graph has
- *  a cycle and, if so, the <em>cycle</em> operation returns one.
- *  <p>
- *  This implementation uses depth-first search.
- *  The constructor takes time proportional to <em>V</em> + <em>E</em>
- *  (in the worst case),
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Afterwards, the <em>hasCycle</em> operation takes constant time;
- *  the <em>cycle</em> operation takes time proportional
- *  to the length of the cycle.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/41graph">Section 4.1</a>   
- *  of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * The {@code Cycle} class represents a data type for
+ * determining whether an undirected graph has a simple cycle.
+ * The <em>hasCycle</em> operation determines whether the graph has
+ * a cycle and, if so, the <em>cycle</em> operation returns one.
+ * <p>
+ * This implementation uses depth-first search.
+ * The constructor takes time proportional to <em>V</em> + <em>E</em>
+ * (in the worst case),
+ * where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
+ * Afterwards, the <em>hasCycle</em> operation takes constant time;
+ * the <em>cycle</em> operation takes time proportional
+ * to the length of the cycle.
+ * <p>
+ * For additional documentation, see <a href="https://algs4.cs.princeton.edu/41graph">Section 4.1</a>
+ * of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * @author Robert Sedgewick
+ * @author Kevin Wayne
  */
 public class Cycle {
     private boolean[] marked;
@@ -54,13 +56,19 @@ public class Cycle {
      * @param G the undirected graph
      */
     public Cycle(Graph G) {
-        if (hasSelfLoop(G)) return;
-        if (hasParallelEdges(G)) return;
+        if (hasSelfLoop(G)) {
+            return;
+        }
+        if (hasParallelEdges(G)) {
+            System.out.println("hasParallelEdges=======>");
+            return;
+        }
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
         for (int v = 0; v < G.V(); v++)
-            if (!marked[v])
+            if (!marked[v]) {
                 dfs(G, -1, v);
+            }
     }
 
 
@@ -116,10 +124,11 @@ public class Cycle {
         return cycle != null;
     }
 
-     /**
+    /**
      * Returns a cycle in the graph {@code G}.
+     *
      * @return a cycle if the graph {@code G} has a cycle,
-     *         and {@code null} otherwise
+     * and {@code null} otherwise
      */
     public Iterable<Integer> cycle() {
         return cycle;
@@ -155,16 +164,20 @@ public class Cycle {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        Graph G = new Graph(in);
+//        Scanner scanner = new Scanner(System.in);
+//        In in = new In(scanner);
+        Graph G = new Graph(4);
+        G.addEdge(1, 2);
+        //G.addEdge(0, 2);
+        G.addEdge(1, 3);
+        G.addEdge(2, 3);
         Cycle finder = new Cycle(G);
         if (finder.hasCycle()) {
             for (int v : finder.cycle()) {
                 StdOut.print(v + " ");
             }
             StdOut.println();
-        }
-        else {
+        } else {
             StdOut.println("Graph is acyclic");
         }
     }
