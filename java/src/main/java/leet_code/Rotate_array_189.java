@@ -1,5 +1,8 @@
 package leet_code;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by sanyinchen on 19-9-26.
  *
@@ -8,22 +11,23 @@ package leet_code;
  * @since 19-9-26
  */
 
-// todo fail
 class Rotate_array_189 {
     static class Solution {
         public void rotate(int[] nums, int k) {
-            if (nums == null || nums.length == 0) {
+            if (nums == null || nums.length == 0 || k == 0) {
                 return;
             }
-            int start = k % nums.length;
-            System.out.println("start:" + start);
-            int temp = (start + 1) % nums.length;
-            for (int i = start; i != start - 1; i = (i + 1) % nums.length) {
-                int a = nums[i];
+            List<Integer> numsList = new ArrayList<>();
+            for (int i = 0; i < nums.length; i++) {
+                numsList.add(nums[i]);
+            }
 
-                System.out.println("i:" + i + " a:" + a + " j:" + (i + start) % nums.length);
-                nums[i] = nums[(i + start) % nums.length];
-                nums[(i + start) % nums.length] = a;
+            int start = (k) % nums.length;
+            List<Integer> res = new ArrayList<>();
+            res.addAll(numsList.subList(numsList.size() - start, numsList.size()));
+            res.addAll(numsList.subList(0, numsList.size() - start));
+            for (int i = 0; i < nums.length; i++) {
+                nums[i] = res.get(i);
             }
         }
     }
@@ -31,7 +35,8 @@ class Rotate_array_189 {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7};
         new Solution().rotate(nums, 3);
-
+        // int[] nums = new int[]{1, 2};
+        // new Solution().rotate(nums, 1);
         System.out.println("===========>");
 
         for (int i = 0; i < nums.length; i++) {
