@@ -1,7 +1,10 @@
 package leet_code.weekly_contest.weekly_155;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
@@ -13,52 +16,83 @@ import java.util.Set;
  * @since 19-9-21
  */
 
-// todo fail
 class Minimum_Knight_Moves {
     static class Solution {
 
+        private int getHWight(int x, int y, int targetX, int targetY) {
+            if (Math.abs(targetX - x) <= 70 || Math.abs(targetY - y) <= 70) {
+                return 0;
+            }
+            return Math.abs(targetX - x) + Math.abs(targetY - y);
+        }
 
         public int minKnightMoves(int x, int y) {
 
             int step = 0;
-            Set<String> visited = new HashSet<>();
+            int[][] steps = new int[][]{{1, 2}, {1, -2}, {-1, 2}, {-1, -2}, {2, 1}, {2, -1}, {-2, 1}, {-2, -1}};
+            Set<Integer> visited = new HashSet<>();
             LinkedList<Node> queue = new LinkedList<>();
             queue.add(new Node(0, 0));
 
             while (queue.size() != 0) {
-                Node node = queue.poll();
-                String key = node.toString();
-                if (x == node.x && y == node.y) {
-                    return step;
-                }
-                if (visited.contains(key)) {
-                    continue;
-                }
-                visited.add(key);
+                int size = queue.size();
                 step++;
-                int tempX = node.x;
-                int tempY = node.y;
-                queue.add(new Node(tempX - 1, tempY - 2));
-                queue.add(new Node(tempX - 1, tempY + 2));
-                queue.add(new Node(tempX + 1, tempY - 2));
-                queue.add(new Node(tempX + 1, tempY + 2));
+                while (size-- > 0) {
+                    Node node = queue.poll();
 
-                queue.add(new Node(tempX - 2, tempY - 1));
-                queue.add(new Node(tempX - 2, tempY + 1));
-                queue.add(new Node(tempX + 2, tempY - 1));
-                queue.add(new Node(tempX + 2, tempY + 1));
+                    if (x == node.x && y == node.y) {
+                        return step - 1;
+                    }
+                    if (visited.contains(node.x * 1000 + node.y)) {
+                        continue;
+                    }
+                    visited.add(node.x * 1000 + node.y);
+
+                    int tempX = node.x;
+                    int tempY = node.y;
+
+
+                    Node[] tempNodes = new Node[8];
+
+                    int minWeight = Integer.MAX_VALUE;
+                    for (int i = 0; i < steps.length; i++) {
+                        int[] v = steps[i];
+                        Node temp = new Node(tempX + v[0], tempY + v[1], step + getHWight(tempX + v[0], tempY + v[1], x,
+                                y));
+                        tempNodes[i] = temp;
+                        if (minWeight > temp.weight) {
+                            minWeight = temp.weight;
+                        }
+                    }
+
+
+                    for (Node item : tempNodes) {
+                        if (item.weight == minWeight) {
+                            queue.add(item);
+                        }
+                    }
+
+                }
 
             }
-            return step;
+
+            return step - 1;
         }
 
         public class Node {
             int x;
             int y;
+            int weight;
 
             public Node(int x, int y) {
                 this.x = x;
                 this.y = y;
+            }
+
+            public Node(int x, int y, int weight) {
+                this.x = x;
+                this.y = y;
+                this.weight = weight;
             }
 
             @Override
@@ -69,6 +103,6 @@ class Minimum_Knight_Moves {
     }
 
     public static void main(String[] args) {
-        System.out.print(new Solution().minKnightMoves(5, 5));
+        System.out.print(new Solution().minKnightMoves(300, 0));
     }
 }
