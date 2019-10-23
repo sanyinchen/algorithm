@@ -9,7 +9,7 @@ public class Course_schedule_207 {
         public boolean canFinish(int numCourses, int[][] prerequisites) {
             Map<Integer, Set<Integer>> graph = new HashMap<>();
             for (int i=0;i<prerequisites.length;i++){
-                
+
             }
         }
     }
