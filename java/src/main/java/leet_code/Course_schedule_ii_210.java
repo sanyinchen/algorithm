@@ -7,10 +7,17 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-public class Course_schedule_207 {
-    static class Solution {
-        public boolean canFinish(int numCourses, int[][] prerequisites) {
+/**
+ * Created by sanyinchen on 19-10-23.
+ *
+ * @author sanyinchen
+ * @version v0.1
+ * @since 19-10-23
+ */
 
+class Course_schedule_ii_210 {
+    class Solution {
+        public int[] findOrder(int numCourses, int[][] prerequisites) {
             Map<Integer, Set<Integer>> graph = new HashMap<>();
             int[] inDegree = new int[numCourses];
             boolean[] mark = new boolean[numCourses];
@@ -25,7 +32,7 @@ public class Course_schedule_207 {
                 inDegree[first]++;
             }
             int count = 0;
-
+            int[] order = new int[numCourses];
             for (int zeroInDegreeIndex = 0; zeroInDegreeIndex < graph.size(); zeroInDegreeIndex++) {
                 if (mark[zeroInDegreeIndex] || inDegree[zeroInDegreeIndex] != 0) {
                     continue;
@@ -37,11 +44,11 @@ public class Course_schedule_207 {
 
                 while (!queue.isEmpty()) {
                     int v = queue.poll();
-                    count++;
+                    order[count++] = v;
                     mark[v] = true;
                     for (int item : graph.get(v)) {
                         if (mark[item]) {
-                            return false;
+                            return new int[]{};
                         }
                         inDegree[item]--;
                         if (inDegree[item] == 0) {
@@ -50,13 +57,7 @@ public class Course_schedule_207 {
                     }
                 }
             }
-            return count == graph.size();
+            return count == graph.size() ? order : new int[]{};
         }
-
-    }
-
-    public static void main(String[] args) {
-        int[][] inputs = new int[][]{{1, 0}};
-        System.out.println("==>" + new Solution().canFinish(2, inputs));
     }
 }
