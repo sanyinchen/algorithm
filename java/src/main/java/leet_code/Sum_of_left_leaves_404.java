@@ -20,12 +20,11 @@ class Sum_of_left_leaves_404 {
             if (root == null) {
                 return 0;
             }
-            int left = sumOfLeftLeaves(root.left);
-            int right = sumOfLeftLeaves(root.right);
+            int sum = 0;
             if (root.left != null && root.left.left == null && root.left.right == null) {
-                return right + root.left.val;
+                sum = root.left.val;
             }
-            return left + right;
+            return sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right) + sum;
         }
     }
 
