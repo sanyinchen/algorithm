@@ -17,7 +17,6 @@ class Decode_ways_91 {
             number++
             return
         }
-        // println("=>" + end)
         var cur = nums[end];
         var second = cur - '0';
         if (second != 0) {
