@@ -37,7 +37,7 @@ public class Practical_application_design_the_key_ {
                 List<List<String>> tempList = new ArrayList<>();
                 List<String> tempItem = item.getValue();
 
-            
+
 
                 // res.add(item.getValue());
             }
