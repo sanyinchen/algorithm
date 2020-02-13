@@ -2,46 +2,42 @@ package leet_code;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Longest_palindromic_substring_5 {
     static class Solution {
-        private boolean isPalindromic(String content) {
-            if (content.length() <= 1) {
-                return true;
-            }
-            for (int i = 0, j = content.length() - 1; i < j; i++, j--) {
-                if (content.charAt(i) != content.charAt(j)) {
-                    return false;
-                }
-            }
-            return true;
-        }
-
         public String longestPalindrome(String str) {
             if (str == null || str.length() == 0) {
                 return "";
             }
-            List<String> strings = new ArrayList<>();
-            strings.add(str.charAt(0) + "");
-            String maxStr = strings.get(0);
+            if (str.length() == 1) {
+                return str;
+            }
+            boolean[][] dp = new boolean[str.length()][str.length()];
+            for (int i = 0; i < str.length(); i++) {
+                dp[i][i] = true;
+            }
+            int maxLen = 1;
+            String res = str.charAt(0) + "";
             for (int i = 1; i < str.length(); i++) {
-                char child = str.charAt(i);
-                String newContent = strings.get(i - 1) + child;
-                if (isPalindromic(newContent)) {
-                    strings.add(newContent);
-                    if (newContent.length() > maxStr.length()) {
-                        maxStr = newContent;
+                for (int j = 0; j <= i - 1; j++) {
+                    if (j + 1 >= i - 1) {
+                        dp[j][i] = (str.charAt(i) == str.charAt(j));
+                    } else {
+                        dp[j][i] = (dp[j + 1][i - 1] && (str.charAt(i) == str.charAt(j)));
                     }
-                } else {
-                    strings.add(child + "");
+                    if (dp[j][i] && ((i - j + 1) > maxLen)) {
+                        maxLen = (i - j) + 1;
+                        res = str.substring(j, i + 1);
+                    }
                 }
             }
-            return maxStr;
+            return res;
         }
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.longestPalindrome("babad"));
+        System.out.println(solution.longestPalindrome("ac"));
     }
 }
