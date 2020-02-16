@@ -6,51 +6,38 @@ import java.util.Map;
 // todo FAIL
 public class Coin_lcci_08_11 {
     static class Solution {
-        static Map<Integer, Integer> cache = new HashMap<>();
 
-        static {
-            cache.put(1, 1);
+        private int getValidValue(int value) {
+            return value % 1000000007;
         }
 
-        int number = 0;
-
-        private boolean waysToChangeHelper(int n) {
-            if (n <= 1) {
-                number++;
-                return true;
-            }
-            if (cache.containsKey(n)) {
-                number += cache.get(n);
-                return true;
-            }
-            if (n % 25 == 0) {
-                if (waysToChangeHelper(n - 25)) {
-                    cache.put(n, number);
-                }
-            }
-            if (n % 10 == 0) {
-                if (waysToChangeHelper(n - 10)) {
-                    cache.put(n, number);
-                }
-            }
-            if (n % 5 == 0) {
-                if (waysToChangeHelper(n - 5)) {
-                    cache.put(n, number);
-                }
-            }
-            waysToChangeHelper(0);
-            return false;
-        }
 
         public int waysToChange(int n) {
-            waysToChangeHelper(n);
-            return number;
+            int[] coins = new int[]{1, 5, 10, 25};
+            int[][] dp = new int[coins.length][n + 1];
+            for (int i = 1; i < coins.length; i++) {
+                dp[i][0] = 1;
+            }
+            for (int i = 1; i <= n; i++) {
+                dp[0][i] = 1;
+            }
+            for (int i = 1; i < coins.length; i++) {
+                for (int j = 1; j <= n; j++) {
+                    if (j < coins[i]) {
+                        dp[i][j] = dp[i - 1][j];
+                    } else {
+                        dp[i][j] = getValidValue(dp[i - 1][j] + dp[i][j - coins[i]]);
+                    }
+                }
+            }
+
+            return dp[coins.length - 1][n];
         }
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int res = solution.waysToChange(1000);
+        int res = solution.waysToChange(20);
         System.out.println("res:" + res);
     }
 }
