@@ -12,24 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ca3442-5f9d-45ee-851d-d118ab28899a" name="Default" comment="[feature] algorithm update">
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/contest/weekly_contest_178/how_many_numbers_are_smaller_than_the_current_number_5344.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/java.java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/java.java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/java.java.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/java.java.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/java.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/java.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code/All_possible_full_binary_trees_894.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/All_possible_full_binary_trees_894.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code/common/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/common/TreeNode.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/../demo/cmake-build-debug/" />
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
-    <ignored path="$PROJECT_DIR$/java/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/build/" />
-    <ignored path="$PROJECT_DIR$/java/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,30 +45,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -90,114 +55,10 @@
   <component name="FavoritesManager">
     <favorites_list name="demo" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Range_sum_of_bst_938.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/common/TreeNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding>
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/All_possible_full_binary_trees_894.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="97" column="49" lean-forward="true" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
-              <folding>
-                <element signature="e#3149#3150#0" expanded="true" />
-                <element signature="e#3197#3198#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Algorithm_20.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="90" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar!/jdk/nashorn/api/scripting/JSObject.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Character.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/List.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/Stack.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/LinkedList.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -225,130 +86,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/../demo/cmain.c" />
-        <option value="$PROJECT_DIR$/../demo/main.cpp" />
-        <option value="$PROJECT_DIR$/../demo/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/files/sort_1.txt" />
-        <option value="$PROJECT_DIR$/sort/insertSort.cpp" />
-        <option value="$PROJECT_DIR$/sort/mergerSort.cpp" />
-        <option value="$PROJECT_DIR$/aizu_judge/prime.cpp" />
-        <option value="$PROJECT_DIR$/recursion/maxmum.cpp" />
-        <option value="$PROJECT_DIR$/sort/heapSort.cpp" />
-        <option value="$PROJECT_DIR$/aizu_judge/ALDS1_9_B_heapSort.cpp" />
-        <option value="$PROJECT_DIR$/sort/priorityQueue.cpp" />
-        <option value="$PROJECT_DIR$/aizu_judge/ALDS1_9_C_priorityQueue.cpp" />
-        <option value="$PROJECT_DIR$/leetcode/twoSum.cpp" />
-        <option value="$PROJECT_DIR$/leetcode/Median_of_Two_Sorted_Arrays.cpp" />
-        <option value="$PROJECT_DIR$/leetcode/Add_Two_Numbers.cpp" />
-        <option value="$PROJECT_DIR$/leetcode/Reverse_Integer.cpp" />
-        <option value="$PROJECT_DIR$/leetcode/Merge_Two_Sorted_Lists.cpp" />
-        <option value="$PROJECT_DIR$/leetcode/Merge_K_Sorted_Lists.cpp" />
-        <option value="$PROJECT_DIR$/aizu_judge/ALDS1_2_A_Bubble_Sort.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/files/in.txt" />
-        <option value="$PROJECT_DIR$/aizu_judge/ALDS1_2_B_Selection_Sort.cpp" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Algorithm_Simple_20.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Algorithm_1114.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency1114.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1114.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1117.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/ZeroEvenOdd_1116.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_19.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Simple_7.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_25.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_206.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247_1.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_248.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Output_Contest_Matches_544.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Add_Two_Numbers_ii_445.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Minimum_Factorization_625.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/weekly_contest/weely_154/Reverse_Substrings_5190.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Longest_Univalue_Path_687.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Binary_tree_maximum_path_sum_124.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/Range_sum_of_bst_938.java" />
-        <option value="$PROJECT_DIR$/java/build.gradle" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/common/TreeNode.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code/All_possible_full_binary_trees_894.java" />
-      </list>
-    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="114" />
-    <option name="width" value="1843" />
-    <option name="height" value="789" />
-  </component>
+  <component name="ProjectId" id="1TgmOCLT1Fv0RZiUocmHCZQKmbe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="leet_code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568611832984" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../git/matrix/matrix/matrix-android" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -376,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.All_possible_full_binary_trees_894">
+  <component name="RunManager" selected="Application.Zhong_jian_er_cha_shu_lcof_07">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="demo" TARGET_NAME="demo" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -519,9 +281,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration name="All_possible_full_binary_trees_894" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leet_code.All_possible_full_binary_trees_894" />
-      <module name="java.java.main" />
+    <configuration name="Check_if_n_and_its_double_exist_5332" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code.weekly_contest.weekly_175.Check_if_n_and_its_double_exist_5332" />
+      <module name="algorithm.java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leet_code.weekly_contest.weekly_175.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coin_lcci_08_11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code.Coin_lcci_08_11" />
+      <module name="algorithm.java.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leet_code.*" />
@@ -532,9 +307,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Binary_tree_maximum_path_sum_124" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leet_code.Binary_tree_maximum_path_sum_124" />
-      <module name="java.java.main" />
+    <configuration name="Longest_palindromic_substring_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code.Longest_palindromic_substring_5" />
+      <module name="algorithm.java.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leet_code.*" />
@@ -545,12 +320,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Longest_Univalue_Path_687" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leet_code.Longest_Univalue_Path_687" />
-      <module name="java.java.main" />
+    <configuration name="Minimum_number_of_steps_to_make_two_strings_anagram_5333" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code.weekly_contest.weekly_175.Minimum_number_of_steps_to_make_two_strings_anagram_5333" />
+      <module name="algorithm.java.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leet_code.*" />
+          <option name="PATTERN" value="leet_code.weekly_contest.weekly_175.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -558,12 +333,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Range_sum_of_bst_938" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leet_code.Range_sum_of_bst_938" />
-      <module name="java.java.main" />
+    <configuration name="Zhong_jian_er_cha_shu_lcof_07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code_part2.Zhong_jian_er_cha_shu_lcof_07" />
+      <module name="algorithm.java.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leet_code.*" />
+          <option name="PATTERN" value="leet_code_part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -589,17 +364,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Binary_tree_maximum_path_sum_124" />
-      <item itemvalue="Application.Longest_Univalue_Path_687" />
-      <item itemvalue="Application.Range_sum_of_bst_938" />
-      <item itemvalue="Application.All_possible_full_binary_trees_894" />
+      <item itemvalue="Application.Longest_palindromic_substring_5" />
+      <item itemvalue="Application.Check_if_n_and_its_double_exist_5332" />
+      <item itemvalue="Application.Minimum_number_of_steps_to_make_two_strings_anagram_5333" />
+      <item itemvalue="Application.Coin_lcci_08_11" />
+      <item itemvalue="Application.Zhong_jian_er_cha_shu_lcof_07" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.All_possible_full_binary_trees_894" />
-        <item itemvalue="Application.Binary_tree_maximum_path_sum_124" />
-        <item itemvalue="Application.Range_sum_of_bst_938" />
-        <item itemvalue="Application.Longest_Univalue_Path_687" />
+        <item itemvalue="Application.Zhong_jian_er_cha_shu_lcof_07" />
+        <item itemvalue="Application.Coin_lcci_08_11" />
+        <item itemvalue="Application.Longest_palindromic_substring_5" />
+        <item itemvalue="Application.Minimum_number_of_steps_to_make_two_strings_anagram_5333" />
+        <item itemvalue="Application.Check_if_n_and_its_double_exist_5332" />
       </list>
     </recent_temporary>
   </component>
@@ -650,6 +427,44 @@
       <workItem from="1568610737321" duration="252000" />
       <workItem from="1568611424718" duration="291000" />
       <workItem from="1568611732073" duration="133000" />
+      <workItem from="1573890081715" duration="4846000" />
+      <workItem from="1579529647481" duration="1704000" />
+      <workItem from="1580638088614" duration="1229000" />
+      <workItem from="1580639541973" duration="209000" />
+      <workItem from="1580647823175" duration="178000" />
+      <workItem from="1580648011969" duration="56000" />
+      <workItem from="1580648078195" duration="810000" />
+      <workItem from="1580648900162" duration="252000" />
+      <workItem from="1580649213571" duration="44000" />
+      <workItem from="1580649439533" duration="52000" />
+      <workItem from="1580649561118" duration="5667000" />
+      <workItem from="1580871124268" duration="6272000" />
+      <workItem from="1580904975105" duration="1591000" />
+      <workItem from="1580978011926" duration="352000" />
+      <workItem from="1580978447888" duration="766000" />
+      <workItem from="1581050051855" duration="29000" />
+      <workItem from="1581050106189" duration="1756000" />
+      <workItem from="1581080337397" duration="85000" />
+      <workItem from="1581215627770" duration="3416000" />
+      <workItem from="1581240597450" duration="2367000" />
+      <workItem from="1581492095492" duration="432000" />
+      <workItem from="1581602931136" duration="46000" />
+      <workItem from="1581606191711" duration="3804000" />
+      <workItem from="1581611675849" duration="1212000" />
+      <workItem from="1581650536475" duration="609000" />
+      <workItem from="1581651400905" duration="2477000" />
+      <workItem from="1581744938171" duration="681000" />
+      <workItem from="1581842020571" duration="5959000" />
+      <workItem from="1581871290071" duration="1435000" />
+      <workItem from="1581913745141" duration="2344000" />
+      <workItem from="1581930274822" duration="4155000" />
+      <workItem from="1581941675991" duration="2330000" />
+      <workItem from="1582014403596" duration="1508000" />
+      <workItem from="1582105034827" duration="11000" />
+      <workItem from="1582211516209" duration="1793000" />
+      <workItem from="1582648125774" duration="1860000" />
+      <workItem from="1582950473822" duration="601000" />
+      <workItem from="1583033347122" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] struct update">
       <created>1568122483530</created>
@@ -707,11 +522,92 @@
       <option name="project" value="LOCAL" />
       <updated>1568562722249</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[feature] algorithm update">
+      <created>1573890665894</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573890665894</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[feature] algorithm update">
+      <created>1580649657736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1580649657736</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[feature] algorithm update">
+      <created>1580649878937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1580649878937</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[feature] algorithm update">
+      <created>1580875117903</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580875117903</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[feature] algorithm update">
+      <created>1581050459951</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581050459951</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[feature] algorithm update">
+      <created>1581241842173</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581241842173</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[feature] algorithm update">
+      <created>1581492429874</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581492429874</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[feature] algorithm update">
+      <created>1581863205101</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581863205101</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[feature] algorithm update">
+      <created>1581914575489</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581914575490</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[feature] algorithm update">
+      <created>1582015533522</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1582015533522</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[feature] algorithm update">
+      <created>1582212594926</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1582212594926</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[feature] algorithm update">
+      <created>1582649415952</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582649415952</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250614000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,49 +618,51 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25180256" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2654388" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="CMake" order="8" weight="0.3285273" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32719395" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.31960997" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tool Output" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="15" />
-      <window_info anchor="bottom" id="Build" order="16" weight="0.32936078" />
-      <window_info anchor="bottom" id="Problems" order="17" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Gradle" order="9" weight="0.3294509" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3294509" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -774,99 +672,169 @@
     <MESSAGE value="[feature] algorithm update" />
     <option name="LAST_COMMIT_MESSAGE" value="[feature] algorithm update" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580648061172">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580648061172" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580649151967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580649151967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580649151967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580649151967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580639422236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580639422236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580639422236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580639422236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1580649459628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580649459628" />
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580649213986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580649213986" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580639208856">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580639208856" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580639238426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580639238426" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_25.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_25.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Simple_7.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247.java</url>
           <line>140</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247.java</url>
           <line>158</line>
-          <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Output_Contest_Matches_544.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Output_Contest_Matches_544.java</url>
           <line>82</line>
-          <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Minimum_Factorization_625.java</url>
           <line>146</line>
-          <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Minimum_Factorization_625.java</url>
           <line>129</line>
-          <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/weekly_contest/weely_154/Reverse_Substrings_5190.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="i==8" language="JAVA" />
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/weekly_contest/weely_154/Reverse_Substrings_5190.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/All_possible_full_binary_trees_894.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="45" />
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Longest_palindromic_substring_5.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Longest_palindromic_substring_5.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="i==2" language="JAVA" />
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Longest_palindromic_substring_5.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Coin_lcci_08_11.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code/Coin_lcci_08_11.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zhong_jian_er_cha_shu_lcof_07.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zhong_jian_er_cha_shu_lcof_07.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -879,557 +847,5 @@
         <watch expression="right" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>i==8</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="watch">
-      <expression>
-        <expression-string>s.charAt(i)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>getPrimeFactorList(a)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((Pair) pair.getFirst())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((Pair) pair.getFirst()).getSecond()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((Pair) pair.getFirst()).getFirst()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pair.getFirst().getClass()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pair.getFirst()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>-finalRes</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>- finalRes</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>0 - finalRes</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aizu_judge/ALDS1_2_B_Selection_Sort.cpp" />
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/Vector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="232" column="29" selection-start-line="232" selection-start-column="29" selection-end-line="232" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/Stack.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/sun/misc/VM.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
-          <folding>
-            <element signature="e#3230#3231#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicBoolean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/locks/AbstractQueuedSynchronizer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="323" column="17" selection-start-line="323" selection-start-column="17" selection-end-line="323" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/CountDownLatch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicInteger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="145" selection-start-line="11" selection-end-line="145" />
-          <folding>
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="256" column="16" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
-          <folding>
-            <element signature="e#5348#5349#0" expanded="true" />
-            <element signature="e#5431#5432#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/locks/Lock.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/locks/ReentrantLock.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Float.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/function/IntConsumer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_25.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13680">
-          <caret line="782" column="20" selection-start-line="782" selection-start-column="20" selection-end-line="782" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_248.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" column="60" lean-forward="true" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/jdk/internal/util/xml/impl/Pair.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Output_Contest_Matches_544.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1991#1992#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/Collection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/math/BigInteger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="2302" column="15" selection-start-line="2302" selection-start-column="15" selection-end-line="2302" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/List.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Minimum_Factorization_625.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#6257#6258#0" expanded="true" />
-            <element signature="e#6311#6312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_206.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Add_Two_Numbers_ii_445.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1114.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Concurrency_1117.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_19.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="75" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Link_Solution_24.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Recursive_247_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Simple_7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/ZeroEvenOdd_1116.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Binary_Tree_Inorder_Traversal_94.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Longest_Univalue_Path_687.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="97" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Binary_tree_maximum_path_sum_124.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/Collections.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2774">
-          <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Longest_Common_Prefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/weekly_contest/weely_154/Reverse_Substrings_5190.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/java/src/libs/json-20190722.jar!/org/json/JSONObject.class" />
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Range_sum_of_bst_938.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/common/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/Algorithm_20.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="90" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar!/jdk/nashorn/api/scripting/JSObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Character.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/List.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/Stack.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/LinkedList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code/All_possible_full_binary_trees_894.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="97" column="49" lean-forward="true" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
-          <folding>
-            <element signature="e#3149#3150#0" expanded="true" />
-            <element signature="e#3197#3198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>java.java</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

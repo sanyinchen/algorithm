@@ -4,6 +4,10 @@
     <bytecodeTargetLevel>
       <module name="algorithm.java.java.main" target="1.8" />
       <module name="algorithm.java.java.test" target="1.8" />
+      <module name="algorithm.java.main" target="1.8" />
+      <module name="algorithm.java.test" target="1.8" />
+      <module name="algorithm.main" target="1.8" />
+      <module name="algorithm.test" target="1.8" />
       <module name="java.java.main" target="1.8" />
       <module name="java.java.test" target="1.8" />
       <module name="java.main" target="1.8" />
