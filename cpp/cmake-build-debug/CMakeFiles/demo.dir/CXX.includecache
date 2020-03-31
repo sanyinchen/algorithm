@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/sanyinchen/CLionProjects/algorithm/aizu_judge/ALDS1_2_B_Selection_Sort.cpp
+/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Remove_duplicates_from_sorted_list_83.cpp
 iostream
 -
-cstdio
+unordered_set
 -
 
