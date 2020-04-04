@@ -1,4 +1,4 @@
-/home/sanyinchen/apps/CLion-2019.1.3/clion-2019.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sanyinchen/IdaProjects/algorithm/cpp
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/g/workspace/JAVA/algorithm/algorithm/cpp
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug
+-- Build files have been written to: /mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug
