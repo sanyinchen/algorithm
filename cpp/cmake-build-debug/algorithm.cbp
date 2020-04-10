@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug"/>
+				<Option working_dir="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug"/>
+				<Option working_dir="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="demo">
-				<Option output="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug"/>
+				<Option output="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/common"/>
+					<Add directory="/home/sanyinchen/IdaProjects/algorithm/cpp/common"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -45,20 +45,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="demo/fast">
-				<Option output="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug"/>
+				<Option output="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/common"/>
+					<Add directory="/home/sanyinchen/IdaProjects/algorithm/cpp/common"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -69,39 +69,63 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug"/>
+				<Option working_dir="/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sanyinchen/IdaProjects/algorithm/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/leetcode/172.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Binary_tree_paths_257.cpp">
 			<Option target="demo"/>
 		</Unit>
-		<Unit filename="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/leetcode/Balanced_binary_tree_110.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Binary_watch_401.cpp">
 			<Option target="demo"/>
 		</Unit>
-		<Unit filename="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/leetcode/Binary_tree_level_order_traversal_ii_107.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Bulls_and_cows_299.cpp">
 			<Option target="demo"/>
 		</Unit>
-		<Unit filename="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/leetcode/Minimum_depth_of_binary_tree_111.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Excel_sheet_column_number_171.cpp">
 			<Option target="demo"/>
 		</Unit>
-		<Unit filename="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/leetcode/Sort_an_array_912.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Excel_sheet_column_title_168.cpp">
 			<Option target="demo"/>
 		</Unit>
-		<Unit filename="/mnt/g/workspace/JAVA/algorithm/algorithm/cpp/CMakeLists.txt">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Invert_binary_tree_226.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Is_subsequence_392.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Range_sum_query_immutable_303.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Ransom_note_383.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Sum_of_two_integers_371.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Ugly_number_263.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Word_pattern_290.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
