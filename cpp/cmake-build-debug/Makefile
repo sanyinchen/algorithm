@@ -123,356 +123,59 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-leetcode/Binary_tree_paths_257.o: leetcode/Binary_tree_paths_257.cpp.o
+leetcode/Third_maximum_number_414.o: leetcode/Third_maximum_number_414.cpp.o
 
-.PHONY : leetcode/Binary_tree_paths_257.o
-
-# target to build an object file
-leetcode/Binary_tree_paths_257.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Binary_tree_paths_257.cpp.o
-.PHONY : leetcode/Binary_tree_paths_257.cpp.o
-
-leetcode/Binary_tree_paths_257.i: leetcode/Binary_tree_paths_257.cpp.i
-
-.PHONY : leetcode/Binary_tree_paths_257.i
-
-# target to preprocess a source file
-leetcode/Binary_tree_paths_257.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Binary_tree_paths_257.cpp.i
-.PHONY : leetcode/Binary_tree_paths_257.cpp.i
-
-leetcode/Binary_tree_paths_257.s: leetcode/Binary_tree_paths_257.cpp.s
-
-.PHONY : leetcode/Binary_tree_paths_257.s
-
-# target to generate assembly for a file
-leetcode/Binary_tree_paths_257.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Binary_tree_paths_257.cpp.s
-.PHONY : leetcode/Binary_tree_paths_257.cpp.s
-
-leetcode/Binary_watch_401.o: leetcode/Binary_watch_401.cpp.o
-
-.PHONY : leetcode/Binary_watch_401.o
+.PHONY : leetcode/Third_maximum_number_414.o
 
 # target to build an object file
-leetcode/Binary_watch_401.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Binary_watch_401.cpp.o
-.PHONY : leetcode/Binary_watch_401.cpp.o
+leetcode/Third_maximum_number_414.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Third_maximum_number_414.cpp.o
+.PHONY : leetcode/Third_maximum_number_414.cpp.o
 
-leetcode/Binary_watch_401.i: leetcode/Binary_watch_401.cpp.i
+leetcode/Third_maximum_number_414.i: leetcode/Third_maximum_number_414.cpp.i
 
-.PHONY : leetcode/Binary_watch_401.i
+.PHONY : leetcode/Third_maximum_number_414.i
 
 # target to preprocess a source file
-leetcode/Binary_watch_401.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Binary_watch_401.cpp.i
-.PHONY : leetcode/Binary_watch_401.cpp.i
+leetcode/Third_maximum_number_414.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Third_maximum_number_414.cpp.i
+.PHONY : leetcode/Third_maximum_number_414.cpp.i
 
-leetcode/Binary_watch_401.s: leetcode/Binary_watch_401.cpp.s
+leetcode/Third_maximum_number_414.s: leetcode/Third_maximum_number_414.cpp.s
 
-.PHONY : leetcode/Binary_watch_401.s
+.PHONY : leetcode/Third_maximum_number_414.s
 
 # target to generate assembly for a file
-leetcode/Binary_watch_401.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Binary_watch_401.cpp.s
-.PHONY : leetcode/Binary_watch_401.cpp.s
+leetcode/Third_maximum_number_414.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Third_maximum_number_414.cpp.s
+.PHONY : leetcode/Third_maximum_number_414.cpp.s
 
-leetcode/Bulls_and_cows_299.o: leetcode/Bulls_and_cows_299.cpp.o
+leetcode/Univalued_binary_tree_965.o: leetcode/Univalued_binary_tree_965.cpp.o
 
-.PHONY : leetcode/Bulls_and_cows_299.o
+.PHONY : leetcode/Univalued_binary_tree_965.o
 
 # target to build an object file
-leetcode/Bulls_and_cows_299.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Bulls_and_cows_299.cpp.o
-.PHONY : leetcode/Bulls_and_cows_299.cpp.o
+leetcode/Univalued_binary_tree_965.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Univalued_binary_tree_965.cpp.o
+.PHONY : leetcode/Univalued_binary_tree_965.cpp.o
 
-leetcode/Bulls_and_cows_299.i: leetcode/Bulls_and_cows_299.cpp.i
+leetcode/Univalued_binary_tree_965.i: leetcode/Univalued_binary_tree_965.cpp.i
 
-.PHONY : leetcode/Bulls_and_cows_299.i
-
-# target to preprocess a source file
-leetcode/Bulls_and_cows_299.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Bulls_and_cows_299.cpp.i
-.PHONY : leetcode/Bulls_and_cows_299.cpp.i
-
-leetcode/Bulls_and_cows_299.s: leetcode/Bulls_and_cows_299.cpp.s
-
-.PHONY : leetcode/Bulls_and_cows_299.s
-
-# target to generate assembly for a file
-leetcode/Bulls_and_cows_299.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Bulls_and_cows_299.cpp.s
-.PHONY : leetcode/Bulls_and_cows_299.cpp.s
-
-leetcode/Excel_sheet_column_number_171.o: leetcode/Excel_sheet_column_number_171.cpp.o
-
-.PHONY : leetcode/Excel_sheet_column_number_171.o
-
-# target to build an object file
-leetcode/Excel_sheet_column_number_171.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Excel_sheet_column_number_171.cpp.o
-.PHONY : leetcode/Excel_sheet_column_number_171.cpp.o
-
-leetcode/Excel_sheet_column_number_171.i: leetcode/Excel_sheet_column_number_171.cpp.i
-
-.PHONY : leetcode/Excel_sheet_column_number_171.i
+.PHONY : leetcode/Univalued_binary_tree_965.i
 
 # target to preprocess a source file
-leetcode/Excel_sheet_column_number_171.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Excel_sheet_column_number_171.cpp.i
-.PHONY : leetcode/Excel_sheet_column_number_171.cpp.i
+leetcode/Univalued_binary_tree_965.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Univalued_binary_tree_965.cpp.i
+.PHONY : leetcode/Univalued_binary_tree_965.cpp.i
 
-leetcode/Excel_sheet_column_number_171.s: leetcode/Excel_sheet_column_number_171.cpp.s
+leetcode/Univalued_binary_tree_965.s: leetcode/Univalued_binary_tree_965.cpp.s
 
-.PHONY : leetcode/Excel_sheet_column_number_171.s
-
-# target to generate assembly for a file
-leetcode/Excel_sheet_column_number_171.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Excel_sheet_column_number_171.cpp.s
-.PHONY : leetcode/Excel_sheet_column_number_171.cpp.s
-
-leetcode/Excel_sheet_column_title_168.o: leetcode/Excel_sheet_column_title_168.cpp.o
-
-.PHONY : leetcode/Excel_sheet_column_title_168.o
-
-# target to build an object file
-leetcode/Excel_sheet_column_title_168.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Excel_sheet_column_title_168.cpp.o
-.PHONY : leetcode/Excel_sheet_column_title_168.cpp.o
-
-leetcode/Excel_sheet_column_title_168.i: leetcode/Excel_sheet_column_title_168.cpp.i
-
-.PHONY : leetcode/Excel_sheet_column_title_168.i
-
-# target to preprocess a source file
-leetcode/Excel_sheet_column_title_168.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Excel_sheet_column_title_168.cpp.i
-.PHONY : leetcode/Excel_sheet_column_title_168.cpp.i
-
-leetcode/Excel_sheet_column_title_168.s: leetcode/Excel_sheet_column_title_168.cpp.s
-
-.PHONY : leetcode/Excel_sheet_column_title_168.s
+.PHONY : leetcode/Univalued_binary_tree_965.s
 
 # target to generate assembly for a file
-leetcode/Excel_sheet_column_title_168.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Excel_sheet_column_title_168.cpp.s
-.PHONY : leetcode/Excel_sheet_column_title_168.cpp.s
-
-leetcode/Invert_binary_tree_226.o: leetcode/Invert_binary_tree_226.cpp.o
-
-.PHONY : leetcode/Invert_binary_tree_226.o
-
-# target to build an object file
-leetcode/Invert_binary_tree_226.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Invert_binary_tree_226.cpp.o
-.PHONY : leetcode/Invert_binary_tree_226.cpp.o
-
-leetcode/Invert_binary_tree_226.i: leetcode/Invert_binary_tree_226.cpp.i
-
-.PHONY : leetcode/Invert_binary_tree_226.i
-
-# target to preprocess a source file
-leetcode/Invert_binary_tree_226.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Invert_binary_tree_226.cpp.i
-.PHONY : leetcode/Invert_binary_tree_226.cpp.i
-
-leetcode/Invert_binary_tree_226.s: leetcode/Invert_binary_tree_226.cpp.s
-
-.PHONY : leetcode/Invert_binary_tree_226.s
-
-# target to generate assembly for a file
-leetcode/Invert_binary_tree_226.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Invert_binary_tree_226.cpp.s
-.PHONY : leetcode/Invert_binary_tree_226.cpp.s
-
-leetcode/Is_subsequence_392.o: leetcode/Is_subsequence_392.cpp.o
-
-.PHONY : leetcode/Is_subsequence_392.o
-
-# target to build an object file
-leetcode/Is_subsequence_392.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Is_subsequence_392.cpp.o
-.PHONY : leetcode/Is_subsequence_392.cpp.o
-
-leetcode/Is_subsequence_392.i: leetcode/Is_subsequence_392.cpp.i
-
-.PHONY : leetcode/Is_subsequence_392.i
-
-# target to preprocess a source file
-leetcode/Is_subsequence_392.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Is_subsequence_392.cpp.i
-.PHONY : leetcode/Is_subsequence_392.cpp.i
-
-leetcode/Is_subsequence_392.s: leetcode/Is_subsequence_392.cpp.s
-
-.PHONY : leetcode/Is_subsequence_392.s
-
-# target to generate assembly for a file
-leetcode/Is_subsequence_392.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Is_subsequence_392.cpp.s
-.PHONY : leetcode/Is_subsequence_392.cpp.s
-
-leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.o: leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.o
-
-.PHONY : leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.o
-
-# target to build an object file
-leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.o
-.PHONY : leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.o
-
-leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.i: leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.i
-
-.PHONY : leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.i
-
-# target to preprocess a source file
-leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.i
-.PHONY : leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.i
-
-leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.s: leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.s
-
-.PHONY : leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.s
-
-# target to generate assembly for a file
-leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.s
-.PHONY : leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp.s
-
-leetcode/Range_sum_query_immutable_303.o: leetcode/Range_sum_query_immutable_303.cpp.o
-
-.PHONY : leetcode/Range_sum_query_immutable_303.o
-
-# target to build an object file
-leetcode/Range_sum_query_immutable_303.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Range_sum_query_immutable_303.cpp.o
-.PHONY : leetcode/Range_sum_query_immutable_303.cpp.o
-
-leetcode/Range_sum_query_immutable_303.i: leetcode/Range_sum_query_immutable_303.cpp.i
-
-.PHONY : leetcode/Range_sum_query_immutable_303.i
-
-# target to preprocess a source file
-leetcode/Range_sum_query_immutable_303.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Range_sum_query_immutable_303.cpp.i
-.PHONY : leetcode/Range_sum_query_immutable_303.cpp.i
-
-leetcode/Range_sum_query_immutable_303.s: leetcode/Range_sum_query_immutable_303.cpp.s
-
-.PHONY : leetcode/Range_sum_query_immutable_303.s
-
-# target to generate assembly for a file
-leetcode/Range_sum_query_immutable_303.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Range_sum_query_immutable_303.cpp.s
-.PHONY : leetcode/Range_sum_query_immutable_303.cpp.s
-
-leetcode/Ransom_note_383.o: leetcode/Ransom_note_383.cpp.o
-
-.PHONY : leetcode/Ransom_note_383.o
-
-# target to build an object file
-leetcode/Ransom_note_383.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Ransom_note_383.cpp.o
-.PHONY : leetcode/Ransom_note_383.cpp.o
-
-leetcode/Ransom_note_383.i: leetcode/Ransom_note_383.cpp.i
-
-.PHONY : leetcode/Ransom_note_383.i
-
-# target to preprocess a source file
-leetcode/Ransom_note_383.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Ransom_note_383.cpp.i
-.PHONY : leetcode/Ransom_note_383.cpp.i
-
-leetcode/Ransom_note_383.s: leetcode/Ransom_note_383.cpp.s
-
-.PHONY : leetcode/Ransom_note_383.s
-
-# target to generate assembly for a file
-leetcode/Ransom_note_383.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Ransom_note_383.cpp.s
-.PHONY : leetcode/Ransom_note_383.cpp.s
-
-leetcode/Sum_of_two_integers_371.o: leetcode/Sum_of_two_integers_371.cpp.o
-
-.PHONY : leetcode/Sum_of_two_integers_371.o
-
-# target to build an object file
-leetcode/Sum_of_two_integers_371.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Sum_of_two_integers_371.cpp.o
-.PHONY : leetcode/Sum_of_two_integers_371.cpp.o
-
-leetcode/Sum_of_two_integers_371.i: leetcode/Sum_of_two_integers_371.cpp.i
-
-.PHONY : leetcode/Sum_of_two_integers_371.i
-
-# target to preprocess a source file
-leetcode/Sum_of_two_integers_371.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Sum_of_two_integers_371.cpp.i
-.PHONY : leetcode/Sum_of_two_integers_371.cpp.i
-
-leetcode/Sum_of_two_integers_371.s: leetcode/Sum_of_two_integers_371.cpp.s
-
-.PHONY : leetcode/Sum_of_two_integers_371.s
-
-# target to generate assembly for a file
-leetcode/Sum_of_two_integers_371.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Sum_of_two_integers_371.cpp.s
-.PHONY : leetcode/Sum_of_two_integers_371.cpp.s
-
-leetcode/Ugly_number_263.o: leetcode/Ugly_number_263.cpp.o
-
-.PHONY : leetcode/Ugly_number_263.o
-
-# target to build an object file
-leetcode/Ugly_number_263.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Ugly_number_263.cpp.o
-.PHONY : leetcode/Ugly_number_263.cpp.o
-
-leetcode/Ugly_number_263.i: leetcode/Ugly_number_263.cpp.i
-
-.PHONY : leetcode/Ugly_number_263.i
-
-# target to preprocess a source file
-leetcode/Ugly_number_263.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Ugly_number_263.cpp.i
-.PHONY : leetcode/Ugly_number_263.cpp.i
-
-leetcode/Ugly_number_263.s: leetcode/Ugly_number_263.cpp.s
-
-.PHONY : leetcode/Ugly_number_263.s
-
-# target to generate assembly for a file
-leetcode/Ugly_number_263.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Ugly_number_263.cpp.s
-.PHONY : leetcode/Ugly_number_263.cpp.s
-
-leetcode/Word_pattern_290.o: leetcode/Word_pattern_290.cpp.o
-
-.PHONY : leetcode/Word_pattern_290.o
-
-# target to build an object file
-leetcode/Word_pattern_290.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Word_pattern_290.cpp.o
-.PHONY : leetcode/Word_pattern_290.cpp.o
-
-leetcode/Word_pattern_290.i: leetcode/Word_pattern_290.cpp.i
-
-.PHONY : leetcode/Word_pattern_290.i
-
-# target to preprocess a source file
-leetcode/Word_pattern_290.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Word_pattern_290.cpp.i
-.PHONY : leetcode/Word_pattern_290.cpp.i
-
-leetcode/Word_pattern_290.s: leetcode/Word_pattern_290.cpp.s
-
-.PHONY : leetcode/Word_pattern_290.s
-
-# target to generate assembly for a file
-leetcode/Word_pattern_290.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Word_pattern_290.cpp.s
-.PHONY : leetcode/Word_pattern_290.cpp.s
+leetcode/Univalued_binary_tree_965.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Univalued_binary_tree_965.cpp.s
+.PHONY : leetcode/Univalued_binary_tree_965.cpp.s
 
 # Help Target
 help:
@@ -483,45 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... demo"
 	@echo "... edit_cache"
-	@echo "... leetcode/Binary_tree_paths_257.o"
-	@echo "... leetcode/Binary_tree_paths_257.i"
-	@echo "... leetcode/Binary_tree_paths_257.s"
-	@echo "... leetcode/Binary_watch_401.o"
-	@echo "... leetcode/Binary_watch_401.i"
-	@echo "... leetcode/Binary_watch_401.s"
-	@echo "... leetcode/Bulls_and_cows_299.o"
-	@echo "... leetcode/Bulls_and_cows_299.i"
-	@echo "... leetcode/Bulls_and_cows_299.s"
-	@echo "... leetcode/Excel_sheet_column_number_171.o"
-	@echo "... leetcode/Excel_sheet_column_number_171.i"
-	@echo "... leetcode/Excel_sheet_column_number_171.s"
-	@echo "... leetcode/Excel_sheet_column_title_168.o"
-	@echo "... leetcode/Excel_sheet_column_title_168.i"
-	@echo "... leetcode/Excel_sheet_column_title_168.s"
-	@echo "... leetcode/Invert_binary_tree_226.o"
-	@echo "... leetcode/Invert_binary_tree_226.i"
-	@echo "... leetcode/Invert_binary_tree_226.s"
-	@echo "... leetcode/Is_subsequence_392.o"
-	@echo "... leetcode/Is_subsequence_392.i"
-	@echo "... leetcode/Is_subsequence_392.s"
-	@echo "... leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.o"
-	@echo "... leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.i"
-	@echo "... leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.s"
-	@echo "... leetcode/Range_sum_query_immutable_303.o"
-	@echo "... leetcode/Range_sum_query_immutable_303.i"
-	@echo "... leetcode/Range_sum_query_immutable_303.s"
-	@echo "... leetcode/Ransom_note_383.o"
-	@echo "... leetcode/Ransom_note_383.i"
-	@echo "... leetcode/Ransom_note_383.s"
-	@echo "... leetcode/Sum_of_two_integers_371.o"
-	@echo "... leetcode/Sum_of_two_integers_371.i"
-	@echo "... leetcode/Sum_of_two_integers_371.s"
-	@echo "... leetcode/Ugly_number_263.o"
-	@echo "... leetcode/Ugly_number_263.i"
-	@echo "... leetcode/Ugly_number_263.s"
-	@echo "... leetcode/Word_pattern_290.o"
-	@echo "... leetcode/Word_pattern_290.i"
-	@echo "... leetcode/Word_pattern_290.s"
+	@echo "... leetcode/Third_maximum_number_414.o"
+	@echo "... leetcode/Third_maximum_number_414.i"
+	@echo "... leetcode/Third_maximum_number_414.s"
+	@echo "... leetcode/Univalued_binary_tree_965.o"
+	@echo "... leetcode/Univalued_binary_tree_965.i"
+	@echo "... leetcode/Univalued_binary_tree_965.s"
 .PHONY : help
 
 

@@ -86,43 +86,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Binary_tree_paths_257.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Third_maximum_number_414.cpp">
 			<Option target="demo"/>
 		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Binary_watch_401.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Bulls_and_cows_299.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Excel_sheet_column_number_171.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Excel_sheet_column_title_168.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Invert_binary_tree_226.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Is_subsequence_392.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Lowest_common_ancestor_of_a_binary_search_tree_235.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Range_sum_query_immutable_303.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Ransom_note_383.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Sum_of_two_integers_371.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Ugly_number_263.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Word_pattern_290.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Univalued_binary_tree_965.cpp">
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/CMakeLists.txt">
