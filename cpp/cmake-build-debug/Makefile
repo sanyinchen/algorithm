@@ -123,59 +123,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-leetcode/Third_maximum_number_414.o: leetcode/Third_maximum_number_414.cpp.o
+leetcode/Longest_palindrome_409.o: leetcode/Longest_palindrome_409.cpp.o
 
-.PHONY : leetcode/Third_maximum_number_414.o
-
-# target to build an object file
-leetcode/Third_maximum_number_414.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Third_maximum_number_414.cpp.o
-.PHONY : leetcode/Third_maximum_number_414.cpp.o
-
-leetcode/Third_maximum_number_414.i: leetcode/Third_maximum_number_414.cpp.i
-
-.PHONY : leetcode/Third_maximum_number_414.i
-
-# target to preprocess a source file
-leetcode/Third_maximum_number_414.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Third_maximum_number_414.cpp.i
-.PHONY : leetcode/Third_maximum_number_414.cpp.i
-
-leetcode/Third_maximum_number_414.s: leetcode/Third_maximum_number_414.cpp.s
-
-.PHONY : leetcode/Third_maximum_number_414.s
-
-# target to generate assembly for a file
-leetcode/Third_maximum_number_414.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Third_maximum_number_414.cpp.s
-.PHONY : leetcode/Third_maximum_number_414.cpp.s
-
-leetcode/Univalued_binary_tree_965.o: leetcode/Univalued_binary_tree_965.cpp.o
-
-.PHONY : leetcode/Univalued_binary_tree_965.o
+.PHONY : leetcode/Longest_palindrome_409.o
 
 # target to build an object file
-leetcode/Univalued_binary_tree_965.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Univalued_binary_tree_965.cpp.o
-.PHONY : leetcode/Univalued_binary_tree_965.cpp.o
+leetcode/Longest_palindrome_409.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindrome_409.cpp.o
+.PHONY : leetcode/Longest_palindrome_409.cpp.o
 
-leetcode/Univalued_binary_tree_965.i: leetcode/Univalued_binary_tree_965.cpp.i
+leetcode/Longest_palindrome_409.i: leetcode/Longest_palindrome_409.cpp.i
 
-.PHONY : leetcode/Univalued_binary_tree_965.i
+.PHONY : leetcode/Longest_palindrome_409.i
 
 # target to preprocess a source file
-leetcode/Univalued_binary_tree_965.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Univalued_binary_tree_965.cpp.i
-.PHONY : leetcode/Univalued_binary_tree_965.cpp.i
+leetcode/Longest_palindrome_409.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindrome_409.cpp.i
+.PHONY : leetcode/Longest_palindrome_409.cpp.i
 
-leetcode/Univalued_binary_tree_965.s: leetcode/Univalued_binary_tree_965.cpp.s
+leetcode/Longest_palindrome_409.s: leetcode/Longest_palindrome_409.cpp.s
 
-.PHONY : leetcode/Univalued_binary_tree_965.s
+.PHONY : leetcode/Longest_palindrome_409.s
 
 # target to generate assembly for a file
-leetcode/Univalued_binary_tree_965.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Univalued_binary_tree_965.cpp.s
-.PHONY : leetcode/Univalued_binary_tree_965.cpp.s
+leetcode/Longest_palindrome_409.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindrome_409.cpp.s
+.PHONY : leetcode/Longest_palindrome_409.cpp.s
 
 # Help Target
 help:
@@ -186,12 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... demo"
 	@echo "... edit_cache"
-	@echo "... leetcode/Third_maximum_number_414.o"
-	@echo "... leetcode/Third_maximum_number_414.i"
-	@echo "... leetcode/Third_maximum_number_414.s"
-	@echo "... leetcode/Univalued_binary_tree_965.o"
-	@echo "... leetcode/Univalued_binary_tree_965.i"
-	@echo "... leetcode/Univalued_binary_tree_965.s"
+	@echo "... leetcode/Longest_palindrome_409.o"
+	@echo "... leetcode/Longest_palindrome_409.i"
+	@echo "... leetcode/Longest_palindrome_409.s"
 .PHONY : help
 
 

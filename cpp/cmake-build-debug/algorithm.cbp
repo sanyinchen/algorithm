@@ -86,10 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Third_maximum_number_414.cpp">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Univalued_binary_tree_965.cpp">
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Longest_palindrome_409.cpp">
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/CMakeLists.txt">
