@@ -89,6 +89,12 @@
 		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Longest_palindrome_409.cpp">
 			<Option target="demo"/>
 		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Longest_palindromic_subsequence.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/leetcode/Longest_uncommon_subsequence_i_521.cpp">
+			<Option target="demo"/>
+		</Unit>
 		<Unit filename="/home/sanyinchen/IdaProjects/algorithm/cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

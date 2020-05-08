@@ -20,6 +20,7 @@ public:
         for (int k = 2; k <= len; ++k) {
             for (int i = 0; i < len - k + 1; ++i) {
                 int j = i + k - 1;
+                cout<<i<<" "<<j<<endl;
                 if (s[i] == s[j]) {
                     dp[i][j] = 2 + (k == 2 ? 0 : dp[i + 1][j - 1]);
                 } else {

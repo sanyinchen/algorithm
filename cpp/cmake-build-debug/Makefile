@@ -150,6 +150,60 @@ leetcode/Longest_palindrome_409.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindrome_409.cpp.s
 .PHONY : leetcode/Longest_palindrome_409.cpp.s
 
+leetcode/Longest_palindromic_subsequence.o: leetcode/Longest_palindromic_subsequence.cpp.o
+
+.PHONY : leetcode/Longest_palindromic_subsequence.o
+
+# target to build an object file
+leetcode/Longest_palindromic_subsequence.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindromic_subsequence.cpp.o
+.PHONY : leetcode/Longest_palindromic_subsequence.cpp.o
+
+leetcode/Longest_palindromic_subsequence.i: leetcode/Longest_palindromic_subsequence.cpp.i
+
+.PHONY : leetcode/Longest_palindromic_subsequence.i
+
+# target to preprocess a source file
+leetcode/Longest_palindromic_subsequence.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindromic_subsequence.cpp.i
+.PHONY : leetcode/Longest_palindromic_subsequence.cpp.i
+
+leetcode/Longest_palindromic_subsequence.s: leetcode/Longest_palindromic_subsequence.cpp.s
+
+.PHONY : leetcode/Longest_palindromic_subsequence.s
+
+# target to generate assembly for a file
+leetcode/Longest_palindromic_subsequence.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_palindromic_subsequence.cpp.s
+.PHONY : leetcode/Longest_palindromic_subsequence.cpp.s
+
+leetcode/Longest_uncommon_subsequence_i_521.o: leetcode/Longest_uncommon_subsequence_i_521.cpp.o
+
+.PHONY : leetcode/Longest_uncommon_subsequence_i_521.o
+
+# target to build an object file
+leetcode/Longest_uncommon_subsequence_i_521.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_uncommon_subsequence_i_521.cpp.o
+.PHONY : leetcode/Longest_uncommon_subsequence_i_521.cpp.o
+
+leetcode/Longest_uncommon_subsequence_i_521.i: leetcode/Longest_uncommon_subsequence_i_521.cpp.i
+
+.PHONY : leetcode/Longest_uncommon_subsequence_i_521.i
+
+# target to preprocess a source file
+leetcode/Longest_uncommon_subsequence_i_521.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_uncommon_subsequence_i_521.cpp.i
+.PHONY : leetcode/Longest_uncommon_subsequence_i_521.cpp.i
+
+leetcode/Longest_uncommon_subsequence_i_521.s: leetcode/Longest_uncommon_subsequence_i_521.cpp.s
+
+.PHONY : leetcode/Longest_uncommon_subsequence_i_521.s
+
+# target to generate assembly for a file
+leetcode/Longest_uncommon_subsequence_i_521.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_uncommon_subsequence_i_521.cpp.s
+.PHONY : leetcode/Longest_uncommon_subsequence_i_521.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... leetcode/Longest_palindrome_409.o"
 	@echo "... leetcode/Longest_palindrome_409.i"
 	@echo "... leetcode/Longest_palindrome_409.s"
+	@echo "... leetcode/Longest_palindromic_subsequence.o"
+	@echo "... leetcode/Longest_palindromic_subsequence.i"
+	@echo "... leetcode/Longest_palindromic_subsequence.s"
+	@echo "... leetcode/Longest_uncommon_subsequence_i_521.o"
+	@echo "... leetcode/Longest_uncommon_subsequence_i_521.i"
+	@echo "... leetcode/Longest_uncommon_subsequence_i_521.s"
 .PHONY : help
 
 
