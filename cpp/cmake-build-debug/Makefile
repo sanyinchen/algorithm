@@ -204,6 +204,33 @@ leetcode/Longest_uncommon_subsequence_i_521.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Longest_uncommon_subsequence_i_521.cpp.s
 .PHONY : leetcode/Longest_uncommon_subsequence_i_521.cpp.s
 
+leetcode/Powx_n_50.o: leetcode/Powx_n_50.cpp.o
+
+.PHONY : leetcode/Powx_n_50.o
+
+# target to build an object file
+leetcode/Powx_n_50.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Powx_n_50.cpp.o
+.PHONY : leetcode/Powx_n_50.cpp.o
+
+leetcode/Powx_n_50.i: leetcode/Powx_n_50.cpp.i
+
+.PHONY : leetcode/Powx_n_50.i
+
+# target to preprocess a source file
+leetcode/Powx_n_50.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Powx_n_50.cpp.i
+.PHONY : leetcode/Powx_n_50.cpp.i
+
+leetcode/Powx_n_50.s: leetcode/Powx_n_50.cpp.s
+
+.PHONY : leetcode/Powx_n_50.s
+
+# target to generate assembly for a file
+leetcode/Powx_n_50.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/leetcode/Powx_n_50.cpp.s
+.PHONY : leetcode/Powx_n_50.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... leetcode/Longest_uncommon_subsequence_i_521.o"
 	@echo "... leetcode/Longest_uncommon_subsequence_i_521.i"
 	@echo "... leetcode/Longest_uncommon_subsequence_i_521.s"
+	@echo "... leetcode/Powx_n_50.o"
+	@echo "... leetcode/Powx_n_50.i"
+	@echo "... leetcode/Powx_n_50.s"
 .PHONY : help
 
 
