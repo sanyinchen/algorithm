@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ca3442-5f9d-45ee-851d-d118ab28899a" name="Default" comment="[feature] algorithm update">
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/DependInfo.cmake" beforeDir="false" />
@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/link.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/progress.make" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -64,12 +63,21 @@
     <favorites_list name="demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+            <state relative-caret-position="285">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -105,6 +113,7 @@
       <list>
         <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java" />
       </list>
     </option>
   </component>
@@ -122,8 +131,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,7 +190,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589528292946" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589769286240" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -553,7 +562,8 @@
       <workItem from="1589001314725" duration="43000" />
       <workItem from="1589001376486" duration="33000" />
       <workItem from="1589339661849" duration="5000" />
-      <workItem from="1589526182196" duration="1957000" />
+      <workItem from="1589526182196" duration="2257000" />
+      <workItem from="1589768876772" duration="410000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] struct update">
       <created>1568122483530</created>
@@ -730,11 +740,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584287131944</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="[feature] algorithm update">
+      <created>1589528301011</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589528301011</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2038000" />
+    <option name="totallyTimeSpent" value="2748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -749,17 +766,16 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25568497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25901276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -772,6 +788,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -930,8 +947,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <condition expression="i==0&amp;&amp;j==2" language="JAVA" />
           <url>file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java</url>
-          <line>43</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -947,7 +965,23 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i==0&amp;&amp;j==2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -958,10 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java">
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+        <state relative-caret-position="190">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
