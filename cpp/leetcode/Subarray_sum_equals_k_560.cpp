@@ -16,15 +16,14 @@ public:
         if (nums.size() == 1) {
             return nums[0] == k ? 1 : 0;
         }
-        int v_size = nums.size() + 1;
-        vector<int> sums(v_size * 2);
+        int sums[nums.size() + 1];
         sums[0] = 0;
         sums[1] = nums[0];
         int nums_size = nums.size();
         for (int i = 1; i < nums_size; ++i) {
             sums[i + 1] = nums[i] + sums[i];
         }
-        int sums_size = v_size;
+        int sums_size = nums.size() + 1;
         for (int i = 0; i < sums_size - 1; ++i) {
             for (int j = i + 1; j < sums_size; ++j) {
                 if (sums[j] - sums[i] == k) {
@@ -33,18 +32,11 @@ public:
                 }
             }
         }
-
+//        for (int i = 0; i < nums.size(); i++) {
+//            if (nums[i] == k) {
+//                res++;
+//            }
+//        }
         return res;
     }
 };
-
-int main() {
-    Solution solution;
-    vector<int> inputs{-1, -1, 1};
-    cout << solution.subarraySum(inputs, 0) << endl;
-    vector<int> inputs2{1, 1, 1};
-    cout << solution.subarraySum(inputs2, 2) << endl;
-    vector<int> inputs3{1, 2, 3};
-    cout << solution.subarraySum(inputs3, 3);
-    return 0;
-}
