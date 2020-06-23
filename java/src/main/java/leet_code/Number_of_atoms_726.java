@@ -1,6 +1,5 @@
 package leet_code;
 
-import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.ArrayList;
 import java.util.Comparator;
