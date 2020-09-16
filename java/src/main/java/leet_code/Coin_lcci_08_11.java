@@ -3,7 +3,6 @@ package leet_code;
 import java.util.HashMap;
 import java.util.Map;
 
-// todo FAIL
 public class Coin_lcci_08_11 {
     static class Solution {
 

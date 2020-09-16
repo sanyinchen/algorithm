@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
       <config projectName="demo" targetName="demo" />
@@ -13,26 +31,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e6ca3442-5f9d-45ee-851d-d118ab28899a" name="Default" comment="[feature] algorithm update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/demo.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/cmake-build-debug/algorithm.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cmake-build-debug/algorithm.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/kotlin/leet_code/Subsets_ii_90.kt" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code/Subsets_ii_90.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code/Coin_lcci_08_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/Coin_lcci_08_11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Coin_change_322.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Coin_change_322.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/java/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/build/" />
-    <ignored path="$PROJECT_DIR$/java/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,52 +62,6 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="demo" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/src/main/kotlin/leet_code/Subsets_ii_90.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Number_of_segments_in_a_string_434.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -116,87 +71,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Number_of_segments_in_a_string_434.java" />
-        <option value="$PROJECT_DIR$/java/src/main/kotlin/leet_code/Subsets_ii_90.kt" />
-      </list>
-    </option>
-  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="114" />
-    <option name="width" value="1843" />
-    <option name="height" value="789" />
-  </component>
   <component name="ProjectId" id="1TgmOCLT1Fv0RZiUocmHCZQKmbe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="leet_code" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -216,32 +97,20 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java/libs" />
+      <recent name="$PROJECT_DIR$/sort" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leet_code" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/java/src/libs" />
       <recent name="$PROJECT_DIR$/aizu_judge" />
       <recent name="$PROJECT_DIR$/leetcode" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="leet_code" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/java/libs" />
-      <recent name="$PROJECT_DIR$/sort" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Kotlin.leet_code.Subsets_ii_90Kt">
+  <component name="RunManager" selected="Application.Coin_change_322">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="demo" TARGET_NAME="demo" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -384,12 +253,12 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration name="Minimum_number_of_steps_to_make_two_strings_anagram_5333" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leet_code.weekly_contest.weekly_175.Minimum_number_of_steps_to_make_two_strings_anagram_5333" />
+    <configuration name="Coin_change_322" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leet_code_part2.Coin_change_322" />
       <module name="algorithm.java.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leet_code.weekly_contest.weekly_175.*" />
+          <option name="PATTERN" value="leet_code_part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -444,7 +313,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="leet_code.Subsets_ii_90Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="leet_code.Subsets_ii_90Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="java.java.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -468,6 +337,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Coin_change_322" />
         <item itemvalue="Kotlin.leet_code.Subsets_ii_90Kt" />
         <item itemvalue="Application.Subarray_sum_equals_k_560" />
       </list>
@@ -581,6 +451,7 @@
       <workItem from="1590320641179" duration="1815000" />
       <workItem from="1590721111461" duration="66000" />
       <workItem from="1590735445816" duration="973000" />
+      <workItem from="1600223795496" duration="5696000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] struct update">
       <created>1568122483530</created>
@@ -788,9 +659,6 @@
     <option name="localTasksCounter" value="30" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5626000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -800,47 +668,8 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26899612" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tool Output" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="leetcode" order="5" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -848,12 +677,6 @@
         <entry key="1">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -872,36 +695,20 @@
                   </entry>
                 </map>
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
             </State>
           </value>
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -917,6 +724,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -927,60 +735,70 @@
     <option name="LAST_COMMIT_MESSAGE" value="[feature] algorithm update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580648061172">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2724" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1600162697019">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580648061172" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580649151967">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2724" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600162697019" />
+    <state x="2578" y="168" width="666" height="778" key="#leet_code.Subsets_ii_90Kt" timestamp="1600163292441">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580649151967">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2578" y="168" width="666" height="778" key="#leet_code.Subsets_ii_90Kt/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600163292441" />
+    <state width="1802" height="232" key="GridCell.Tab.0.bottom" timestamp="1600229025424">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580649151967">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="232" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
+    <state width="1802" height="232" key="GridCell.Tab.0.center" timestamp="1600229025424">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580649151967">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="232" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
+    <state width="1802" height="232" key="GridCell.Tab.0.left" timestamp="1600229025424">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580649151967" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580639422236">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="232" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
+    <state width="1802" height="232" key="GridCell.Tab.0.right" timestamp="1600229025424">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580639422236">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="232" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
+    <state width="1802" height="339" key="GridCell.Tab.1.bottom" timestamp="1600228795446">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580639422236">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="339" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
+    <state width="1802" height="339" key="GridCell.Tab.1.center" timestamp="1600228795446">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580639422236">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="339" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
+    <state width="1802" height="339" key="GridCell.Tab.1.left" timestamp="1600228795446">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580639422236" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1580649459628">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="339" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
+    <state width="1802" height="339" key="GridCell.Tab.1.right" timestamp="1600228795446">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580649459628" />
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580649213986">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1802" height="339" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
+    <state x="2687" y="468" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600160635251">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580649213986" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580639208856">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2687" y="468" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600160635251" />
+    <state x="2579" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1600162670106">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580639208856" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580639238426">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580639238426" />
+    <state x="2579" y="259" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600162670106" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Coin_change_322.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Coin_change_322.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="s.charAt(i)" />
@@ -999,39 +817,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Subarray_sum_equals_k_560.java" />
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Convert_a_number_to_hexadecimal_405.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Number_of_segments_in_a_string_434.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/leet_code_part2/Zigzag_conversion_6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/kotlin/leet_code/Subsets_ii_90.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

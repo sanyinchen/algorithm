@@ -1,6 +1,8 @@
 package leet_code_part2;
 
-import java.util.Optional;
+
+
+import java.util.*;
 
 /**
  * Created by sanyinchen on 20-3-11.
@@ -10,23 +12,64 @@ import java.util.Optional;
  * @since 20-3-11
  */
 
-// todo fail
 class Coin_change_322 {
-    class Solution {
-        public int coinChange(int[] coins, int amount) {
-            int[][] dp = new int[coins.length][amount + 1];
-            for (int i = 1; i <= amount; i++) {
-                dp[0][i] = 1;
+    static class Solution {
+        private int min = Integer.MAX_VALUE;
+
+        void GetMinCoinCountOfValueHelper(int total, Integer[] values, int valueIndex, int valueCount, int sum) {
+            if (total == 0) {
+                min = Math.min(sum, min);
+                return;
             }
-            for (int i = 1; i < coins.length; i++) {
-                for (int j = 1; j <= amount; j++) {
-                    if (j < coins[i]) {
-                        continue;
-                    }
-                    dp[i][j] = dp[i - 1][j - coins[i]] + 1;
+
+            if (valueIndex == valueCount || total < 0) {
+                return;
+            }
+
+            int currentValue = values[valueIndex];
+            int maxCount = total / currentValue;
+
+            for (int count = maxCount; count >= 0 && (count + sum) < min; count--) {
+                int rest = total - count * currentValue;
+                if (rest < 0) {
+                    continue;
                 }
+
+                GetMinCoinCountOfValueHelper(rest, values, valueIndex + 1, valueCount, sum + count);
             }
-            return dp[coins.length - 1][amount] > amount ? -1 : dp[coins.length - 1][amount];
+
         }
+
+
+        public int coinChange(int[] coins, int amount) {
+            if (coins.length == 0) {
+                return -1;
+            }
+            if (amount == 0) {
+                return 0;
+            }
+            if (coins.length == 1 && amount < coins[0]) {
+
+                return -1;
+            }
+            Integer[] newCoins = new Integer[coins.length];
+            for (int i = 0; i < coins.length; i++) {
+                newCoins[i] = coins[i];
+            }
+            Arrays.sort(newCoins, new Comparator<Integer>() {
+                @Override
+                public int compare(Integer t0, Integer t1) {
+                    return t1 - t0;
+                }
+            });
+            GetMinCoinCountOfValueHelper(amount, newCoins, 0, newCoins.length, 0);
+            return min == Integer.MAX_VALUE ? -1 : min;
+        }
+    }
+
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println("min:" + solution.coinChange(new int[]{2}, 3));
     }
 }
