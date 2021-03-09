@@ -10,3 +10,12 @@
 /.idea/*
 .idea/
 .idea/*
+/js/.leetcode/node_modules/
+*.class
+*.out
+*.o
+*.bin
+*.kotlin_module
+./**/*.includecache
+/cpp/cmake-build-debug/CMakeFiles/demo.dir/CXX.includecache
+/cpp/cmake-build-debug/CMakeFiles/demo.dir/depend.internal

@@ -30,9 +30,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ca3442-5f9d-45ee-851d-d118ab28899a" name="Default" comment="[feature] algorithm update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code/Coin_lcci_08_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code/Coin_lcci_08_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Coin_change_322.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/leet_code_part2/Coin_change_322.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +70,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="sanyinchen &lt;sanyinchen@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
@@ -90,6 +94,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -452,6 +457,7 @@
       <workItem from="1590721111461" duration="66000" />
       <workItem from="1590735445816" duration="973000" />
       <workItem from="1600223795496" duration="5696000" />
+      <workItem from="1615304215606" duration="1498000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] struct update">
       <created>1568122483530</created>
@@ -656,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590721160508</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="[feature] algorithm update">
+      <created>1615305113309</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1615305113309</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -735,54 +748,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="[feature] algorithm update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2724" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1600162697019">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1615305120440">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="2724" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600162697019" />
-    <state x="2578" y="168" width="666" height="778" key="#leet_code.Subsets_ii_90Kt" timestamp="1600163292441">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2578" y="168" width="666" height="778" key="#leet_code.Subsets_ii_90Kt/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600163292441" />
-    <state width="1802" height="232" key="GridCell.Tab.0.bottom" timestamp="1600229025424">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="232" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
-    <state width="1802" height="232" key="GridCell.Tab.0.center" timestamp="1600229025424">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="232" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
-    <state width="1802" height="232" key="GridCell.Tab.0.left" timestamp="1600229025424">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="232" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
-    <state width="1802" height="232" key="GridCell.Tab.0.right" timestamp="1600229025424">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="232" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600229025424" />
-    <state width="1802" height="339" key="GridCell.Tab.1.bottom" timestamp="1600228795446">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
-    <state width="1802" height="339" key="GridCell.Tab.1.center" timestamp="1600228795446">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
-    <state width="1802" height="339" key="GridCell.Tab.1.left" timestamp="1600228795446">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
-    <state width="1802" height="339" key="GridCell.Tab.1.right" timestamp="1600228795446">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600228795446" />
-    <state x="2687" y="468" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600160635251">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2687" y="468" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600160635251" />
-    <state x="2579" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1600162670106">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2579" y="259" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600162670106" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1615305120440" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
