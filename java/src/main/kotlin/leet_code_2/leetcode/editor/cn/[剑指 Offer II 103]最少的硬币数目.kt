@@ -1,3 +1,5 @@
+import java.util.*
+
 //给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回
 // -1。 
 //
@@ -59,13 +61,35 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution_103 {
-    fun coinChange(coins: IntArray, amount: Int): Int {
+    var minSize = Int.MAX_VALUE;
 
+    fun coinChangeHelper() {
+
+    }
+
+
+
+    fun coinChange(coins: IntArray, amount: Int): Int {
+        if (amount == 0) {
+            return 0
+        }
+        val newCoins = coins.sortDescending()
+
+        coinChangeHelper()
+
+        if (minSize == Int.MAX_VALUE) {
+            return -1
+        }
+        return minSize
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
 fun main() {
-//    val test = Solution()
-//    println("hello")
+    var coinArray = intArrayOf(1, 2, 5)
+    var amount = 11
+//    coinArray = intArrayOf(186, 419, 83, 408)
+//    amount = 6249
+    val test = Solution_103()
+    System.out.println(test.coinChange(coinArray, amount))
 }

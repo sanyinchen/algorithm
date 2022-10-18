@@ -1,0 +1,53 @@
+class Solution {
+    var minSize = Int.MAX_VALUE;
+
+    fun coinChangeHelper(coins: Deque<Pair<Int, Int>>, leftCoins: MutableList<Int>, sum: Int) {
+        if (leftCoins.isEmpty()) {
+            return
+        }
+        var tempSum = 0
+        coins.forEach {
+            tempSum += it.first * it.second
+        }
+        val tryCoin = leftCoins[0]
+        leftCoins.remove(tryCoin)
+        var left = sum - tempSum
+        val size = left / tryCoin
+        coins.push(Pair(tryCoin, size))
+        if (left >= tryCoin) {
+            left %= tryCoin
+            if (left == 0) {
+                var temp = 0
+                coins.forEach {
+                    temp += it.second
+                }
+                if (minSize >= temp) {
+                    minSize = temp
+                }
+            }
+        }
+        coinChangeHelper(coins, leftCoins, sum)
+        coins.pollLast()
+        leftCoins.add(tryCoin)
+        leftCoins.sortDescending()
+    }
+
+    fun coinChange(coins: IntArray, amount: Int): Int {
+        if (amount == 0) {
+            return 0
+        }
+        coinChangeHelper(ArrayDeque<Pair<Int, Int>>(), coins.sortedByDescending { it }.toMutableList(), amount)
+
+        if (minSize == Int.MAX_VALUE) {
+            return -1
+        }
+        return minSize
+    }
+}
+
+//total_testcases:188
+//total_correct:50
+//input_formatted:[186,419,83,408]
+6249
+//expected_output:20
+//code_output:-1
