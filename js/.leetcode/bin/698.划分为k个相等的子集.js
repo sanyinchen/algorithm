@@ -18,7 +18,7 @@ function canPartitionKSubsets(nums, k) {
         return false;
     }
     let target = sum / k;
-    let groups = Array(target).fill(0);
+    let groups = Array(k).fill(0);
     let helper = (index) => {
         if (index < 0) {
             return true;
@@ -35,14 +35,9 @@ function canPartitionKSubsets(nums, k) {
         }
         return false;
     };
-    let res = helper(nums.length - 1);
-    console.log("groups:" + groups.length, "res=>" + res);
-    groups.forEach((item) => {
-        console.log(item + " ");
-    });
-    return res;
+    return helper(nums.length - 1);
 }
 ;
 // @lc code=end
-console.log('==>' + canPartitionKSubsets([1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 5));
+// console.log('==>'+canPartitionKSubsets([1,1,1,1,1,1,1,1,1,1],5))
 //# sourceMappingURL=698.%E5%88%92%E5%88%86%E4%B8%BAk%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.js.map

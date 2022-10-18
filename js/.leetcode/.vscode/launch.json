@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/698.划分为k个相等的子集.ts",
+            "program": "/mnt/extra/workSpace/IdeaProjects/algorithm/js/.leetcode/763.划分字母区间.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/bin/**/*.js"
