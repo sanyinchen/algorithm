@@ -1,0 +1,30 @@
+class Solution {
+       var itemList = mutableListOf<Int>()
+    var allList = mutableListOf<List<Int>>()
+
+
+    fun subsetsHelper(start: Int, nums: IntArray) {
+        if (start > nums.size) {
+            return
+        }
+        // println("start===>" + start)
+        allList.add(itemList.toMutableList())
+        for (i in start until nums.size) {
+            itemList.add(nums[i])
+            subsetsHelper(i + 1, nums)
+            itemList.removeAt(itemList.size - 1)
+        }
+    }
+
+    fun subsets(nums: IntArray): List<List<Int>> {
+        if (nums.isEmpty()) {
+            return emptyList()
+        }
+        itemList.clear()
+        allList.clear()
+        subsetsHelper(0, nums)
+        return allList
+    }
+}
+//runtime:224 ms
+//memory:33.9 MB

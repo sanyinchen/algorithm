@@ -61,26 +61,63 @@ import java.util.*
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution_103 {
-    var minSize = Int.MAX_VALUE;
+    //      class Solution {
+    var cache: HashMap<Int, Int> = HashMap()
+    var min = Int.MAX_VALUE
+    fun coinChangeHelper(sum: Int, coins: IntArray, index: Int): Int {
 
-    fun coinChangeHelper() {
+        if (index == coins.size) {
+            return Int.MAX_VALUE
+        }
+        // println("$index")
+        var minResult = Int.MAX_VALUE
+        val cur = coins[index]
+        var maxCount: Int = sum / cur
+        while (maxCount >= 0) {
+            // println("$index $maxCount $cur")
+            val rest: Int = sum - maxCount * cur
+            if (rest == 0) {
+                // println("===========>")
+                return maxCount
+            }
 
+            val restCount = coinChangeHelper(rest, coins, index + 1)
+            if (restCount == -2) {
+                return -2
+            }
+            if (restCount != Int.MAX_VALUE) {
+                minResult = Math.min(minResult, maxCount + restCount)
+                if (maxCount + restCount > min) {
+                    maxCount--
+                    continue
+                }
+            }
+            if (index == 0) {
+                //  println("minResult:$minResult ${maxCount + restCount}")
+                min = Math.min(min, minResult)
+            }
+            maxCount--
+        }
+        cache[sum] = minResult
+        return minResult
     }
-
-
 
     fun coinChange(coins: IntArray, amount: Int): Int {
         if (amount == 0) {
             return 0
         }
-        val newCoins = coins.sortDescending()
+        cache.clear()
+        coins.sortDescending()
 
-        coinChangeHelper()
+        val res = coinChangeHelper(amount, coins, 0)
 
-        if (minSize == Int.MAX_VALUE) {
-            return -1
+        if (min == Int.MAX_VALUE) {
+            if (res == Int.MAX_VALUE) {
+                return -1
+            }
+            return res
         }
-        return minSize
+        return min
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
@@ -88,8 +125,15 @@ class Solution_103 {
 fun main() {
     var coinArray = intArrayOf(1, 2, 5)
     var amount = 11
-//    coinArray = intArrayOf(186, 419, 83, 408)
-//    amount = 6249
+    coinArray = intArrayOf(3, 7, 405, 436)
+    amount = 8839
+    coinArray = intArrayOf(186, 419, 83, 408)
+    amount = 6249
+    coinArray = intArrayOf(411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422)
+    amount = 9864
+    coinArray = intArrayOf(1)
+    amount = 1
+
     val test = Solution_103()
     System.out.println(test.coinChange(coinArray, amount))
 }

@@ -33,7 +33,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ca3442-5f9d-45ee-851d-d118ab28899a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/doc/submission/[剑指 Offer II 103]最少的硬币数目374169672.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[78]子集.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[剑指 Offer II 095]最长公共子序列.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[剑指 Offer II 097]子序列的数目.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/doc/content/[78]子集.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/doc/content/[剑指 Offer II 095]最长公共子序列.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/doc/content/[剑指 Offer II 097]子序列的数目.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/doc/submission/[78]子集36707868.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[剑指 Offer II 103]最少的硬币数目.kt" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[剑指 Offer II 103]最少的硬币数目.kt" afterDir="false" />
     </list>
@@ -134,7 +140,7 @@
       <recent name="$PROJECT_DIR$/leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._剑指_Offer_II_103_最少的硬币数目Kt">
+  <component name="RunManager" selected="Kotlin._78_子集Kt">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="demo" TARGET_NAME="demo" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -285,15 +291,15 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="_143_重排链表Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_143_重排链表Kt" />
+    <configuration name="_255_验证前序遍历序列二叉搜索树Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_255_验证前序遍历序列二叉搜索树Kt" />
       <module name="algorithm.java.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_255_验证前序遍历序列二叉搜索树Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_255_验证前序遍历序列二叉搜索树Kt" />
+    <configuration name="_78_子集Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_78_子集Kt" />
       <module name="algorithm.java.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -331,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._78_子集Kt" />
         <item itemvalue="Kotlin._剑指_Offer_II_103_最少的硬币数目Kt" />
         <item itemvalue="Kotlin._剑指_Offer_62_圆圈中最后剩下的数字Kt" />
         <item itemvalue="Kotlin._LCP_06_拿硬币Kt" />
         <item itemvalue="Kotlin._255_验证前序遍历序列二叉搜索树Kt" />
-        <item itemvalue="Kotlin._143_重排链表Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -460,6 +466,7 @@
       <workItem from="1666061612949" duration="518000" />
       <workItem from="1666062148037" duration="52000" />
       <workItem from="1666062215543" duration="17712000" />
+      <workItem from="1666148128040" duration="10645000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] struct update">
       <created>1568122483530</created>
@@ -819,11 +826,6 @@
           <url>file://$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[255]验证前序遍历序列二叉搜索树.kt</url>
           <line>108</line>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/java/src/main/kotlin/leet_code_2/leetcode/editor/cn/[剑指 Offer II 103]最少的硬币数目.kt</url>
-          <line>69</line>
-          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
