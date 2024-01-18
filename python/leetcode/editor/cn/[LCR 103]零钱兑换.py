@@ -56,40 +56,58 @@
 # 
 #  Related Topics 广度优先搜索 数组 动态规划 👍 101 👎 0
 
-
+# leetcode submit region begin(Prohibit modification and deletion)
+import sys
 from typing import List
 
 
-# leetcode submit region begin(Prohibit modification and deletion)
-
-
 class Solution:
+    def __init__(self):
+        self.cache = {}
+
     def coinChange(self, coins: List[int], amount: int) -> int:
         if amount == 0:
-            # 找到
             return 0
-        number = 0
-        for coin in coins:
+        self.cache = {}
+        res_min = self.coinChangeExtra(coins, amount, 0)
+        return -1 if res_min == sys.maxsize else res_min
+
+    def coinChangeExtra(self, coins: List[int], amount: int, number: int) -> int:
+        minNumber = sys.maxsize
+        if amount == 0:
+            return minNumber
+        if self.cache.__contains__(amount):
+            return self.cache[amount]
+        for j in range(len(coins)):
+            coin = coins[j]
             if amount < coin:
                 continue
-            amount -= coin * (amount // coin)
+            amount -= coin
             if amount == 0:
-                return number
-            val = self.coinChange(coins, amount)
-            if val == -1:
-                # 回溯
-                amount += coin * (amount // coin)
-                continue
-            print(val)
-        if number == 0:
-            return -1
-        if amount == 0:
-            return number
-        return number
+                minNumber = min(number + 1, minNumber)
+            res_minNumber = self.coinChangeExtra(coins, amount, number + 1)
+            size = amount // coin
+            for i in range(size, 0, -1):
+                amount -= coin * i
+                number += i
+                if amount == 0:
+                    minNumber = min(number, minNumber)
+                res_minNumber = self.coinChangeExtra(coins[j + 1:], amount, number)
+                minNumber = min(res_minNumber, minNumber)
+                amount += coin * i
+                number -= i
+        self.cache[amount] = minNumber
+        return minNumber
 
-        # leetcode submit region end(Prohibit modification and deletion)
+
+# leetcode submit region end(Prohibit modification and deletion)
 
 
 s = Solution()
 print(s.coinChange([186, 419, 83, 408], 6249))
+
+# print(s.coinChange([1, 3, 5], 8))
+
+# print(s.coinChange([3, 7, 405, 436], 8839))
 # print(s.coinChange([1, 5, 2], 11))
+# print(s.coinChange([1], 0))
