@@ -68,34 +68,19 @@ class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         if amount == 0:
             return 0
-        self.cache = {}
-        res_min = self.coinChangeExtra(coins, amount, 0)
-        return -1 if res_min == sys.maxsize else res_min
-
-    def coinChangeExtra(self, coins: List[int], amount: int, number: int) -> int:
-        minNumber = sys.maxsize
-        if amount == 0:
-            return minNumber
+        if amount < 0:
+            return -1
         if self.cache.__contains__(amount):
             return self.cache[amount]
-        for j in range(len(coins)):
-            coin = coins[j]
-            if amount < coin:
+        minNumber = sys.maxsize
+        for coin in coins:
+            res = self.coinChange(coins, amount - coin)
+            if res == -1:
                 continue
-            amount -= coin
-            if amount == 0:
-                minNumber = min(number + 1, minNumber)
-            res_minNumber = self.coinChangeExtra(coins, amount, number + 1)
-            size = amount // coin
-            for i in range(size, 0, -1):
-                amount -= coin * i
-                number += i
-                if amount == 0:
-                    minNumber = min(number, minNumber)
-                res_minNumber = self.coinChangeExtra(coins[j + 1:], amount, number)
-                minNumber = min(res_minNumber, minNumber)
-                amount += coin * i
-                number -= i
+            minNumber = min(res + 1, minNumber)
+
+        if minNumber == sys.maxsize:
+            minNumber = -1
         self.cache[amount] = minNumber
         return minNumber
 
@@ -104,10 +89,12 @@ class Solution:
 
 
 s = Solution()
-print(s.coinChange([186, 419, 83, 408], 6249))
+# print(s.coinChange([186, 419, 83, 408], 6249))
 
 # print(s.coinChange([1, 3, 5], 8))
 
 # print(s.coinChange([3, 7, 405, 436], 8839))
 # print(s.coinChange([1, 5, 2], 11))
+# print(s.coinChange([2], 3))
+print(s.coinChange([2, 5, 10, 1], 27))
 # print(s.coinChange([1], 0))
