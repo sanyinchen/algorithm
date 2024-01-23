@@ -1,0 +1,46 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+         int i = 0;
+
+        private TreeNode buildTreeHelper(Map<Integer, Integer> map, int[] preorder, int[] inorder, int l, int r,
+                                         TreeNode root) {
+            if (l == r||i>=preorder.length ){
+                return null;
+            }
+            System.out.println(i);
+            int rootValue = preorder[i++];
+            root = new TreeNode(rootValue);
+            int mid = map.get(rootValue);
+            root.left = buildTreeHelper(map, preorder, inorder, l, mid - 1, root.left);
+            root.right = buildTreeHelper(map, preorder, inorder, mid + 1, r, root.left);
+            return root;
+        }
+
+        public TreeNode buildTree(int[] preorder, int[] inorder) {
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int i = 0; i < inorder.length; i++) {
+                map.put(inorder[i], i);
+            }
+            TreeNode treeNode = new TreeNode(-1);
+            treeNode.left = new TreeNode(-1);
+            
+            return buildTreeHelper(map, preorder, inorder, 0, preorder.length - 1, treeNode.left);
+        }
+}
+
+//total_testcases:203
+//total_correct:1
+//input_formatted:[3,9,20,15,7]
+[9,3,15,20,7]
+//expected_output:[3,9,20,null,null,15,7]
+//code_output:[3,null,9,20,null,null,15,7]
+//last_testcase:[3,9,20,15,7]
+[9,3,15,20,7]

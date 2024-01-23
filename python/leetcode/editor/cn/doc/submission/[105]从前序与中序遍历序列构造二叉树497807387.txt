@@ -1,0 +1,48 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+
+class Solution:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        return self.build_tree_helper(preorder, 0, inorder)
+
+    def get_index_by_value(self, list: List[int], val: int) -> int:
+        for i in range(len(list)):
+            if val == list[i]:
+                return i
+        return -1
+
+    def build_tree_helper(self, preorder: List[int], root_index: int, inorder: List[int]) -> \
+            Optional[TreeNode]:
+        if root_index >= len(preorder):
+            return None
+        if inorder is None:
+            return None
+        if len(inorder) == 0:
+            return None
+        root_val = preorder[root_index]
+        root_node = TreeNode(root_val)
+        index = self.get_index_by_value(inorder, root_val)
+        # if index is -1:
+        #     return None
+        print(root_index, index, root_val)
+        left = self.build_tree_helper(preorder, root_index + 1, inorder[:index])
+        right = self.build_tree_helper(preorder, root_index + 2, inorder[index + 1:])
+        root_node.left = left
+        root_node.right = right
+        return root_node
+
+
+
+# total_testcases:203
+# total_correct:21
+# input_formatted:[1,2]
+[1,2]
+# expected_output:[1,null,2]
+# code_output:[1]
+# last_testcase:[1,2]
+[1,2]
