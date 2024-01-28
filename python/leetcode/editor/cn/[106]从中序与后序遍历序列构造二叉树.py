@@ -64,23 +64,43 @@ class Solution:
             return None
         if len(inorder) == 0:
             return None
-        root_val = postorder.pop(0)
+        root_val = postorder.pop()
         root_node = TreeNode(root_val)
         index = self.get_index_by_value(inorder, root_val)
         # print(root_index, index, root_val)
         left_list = inorder[:index]
         right_list = inorder[index + 1:]
-        print('root', left_list, root_node.val, right_list)
-        left = self.build_tree_helper(postorder, left_list)
-        right = self.build_tree_helper(postorder, right_list)
+        #print('root', left_list, root_node.val, right_list)
+        right = self.build_tree_helper(right_list, postorder)
+        left = self.build_tree_helper(left_list, postorder)
 
-        root_node.right = right
+        # if leftRoot is not None:
+        #     print('leftRoot', leftRoot.val, end="")
+        # else:
+        #     print('leftRoot #', end="")
+        #
+        # if rightRoot is not None:
+        #     print(' right', rightRoot.val, end=" ")
+        # else:
+        #     print(' right #', end="")
+        #
+        # if root_node is not None:
+        #     print(' root_node', root_node.val, end=" ")
+        # else:
+        #     print(' root_node #', end=" ")
+        # print()
+
+        # if rightRoot is not None:
+        #     print('right', rightRoot.val, root_val)
+        # if leftRoot is not None and rightRoot is not None:
+        #     print('leftRoot', leftRoot.val, 'rightRoot', rightRoot.val, 'val', root_node.val)
+        # if leftRoot is not None and rightRoot is None:
+        #     print('leftRoot', leftRoot.val, 'rightRoot #', 'val', root_node.val)
+        # if leftRoot is None and rightRoot is not None:
+        #     print('leftRoot #', 'rightRoot', rightRoot.val, 'val', root_node.val)
+
         root_node.left = left
-
-        # if left is not None:
-        #     left.left = root_node
-        # if right is not None:
-        #     right.right = root_node
+        root_node.right = right
 
         return root_node
 
