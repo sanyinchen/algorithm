@@ -47,47 +47,46 @@ class Solution:
         self.dp = []
 
     def deleteAndEarn(self, nums: List[int]) -> int:
-        if len(nums) == 1:
-            return nums[0]
-        new_nums = []
-        self.dp = [-1 for _ in range(len(nums))]
-        self.sum = {}
-        for item in nums:
-            if item in self.sum:
-                self.sum[item] += item
+        self.widget = {}
+
+        nums.sort()
+        for i in range(len(nums)):
+            if nums[i] in self.widget:
+                self.widget[nums[i]] += 1
             else:
-                self.sum[item] = item
-                new_nums.append(item)
+                self.widget[nums[i]] = 1
+        widget_nums = []
+        for key, value in self.widget.items():
+            widget_nums.append((key, value))
+        print(widget_nums)
         res = 0
-        new_nums.sort()
-        for i in range(len(new_nums)):
-            res = max(self.deleteAndEarnHelper(new_nums, i), res)
+        self.dp = [-1 for _ in range(len(widget_nums))]
+        for i in range(len(widget_nums)):
+            res = max(res, self.deleteAndEarnHelper(widget_nums, i))
+        print(self.dp)
         return res
 
-    def deleteAndEarnHelper(self, nums: List[int], i: int) -> int:
-        if i < 0:
+    def deleteAndEarnHelper(self, widget_nums: List[Tuple[int, int]], index: int) -> int:
+        if index >= len(widget_nums):
             return 0
-        if i >= len(nums):
-            return 0
-        if self.dp[i] != -1:
-            return self.dp[i]
-        pre_max = 0
-        res = self.sum[nums[i]]
-        # print(nums)
-        for j in range(len(nums)):
-            if nums[j] == nums[i] - 1 or nums[j] == nums[i] + 1:
+        if self.dp[index] != -1:
+            return self.dp[index]
+        max_v = 0
+        cur_value = widget_nums[index][0] * widget_nums[index][1]
+        for i in range(index + 1, len(widget_nums)):
+            if widget_nums[i][0] == widget_nums[index][0] + 1:
                 continue
-            res += self.deleteAndEarnHelper(nums, j)
-        self.dp[i] = res
-        # self.dp[i] = max(self.deleteAndEarnHelper(nums, i - 1), self.deleteAndEarnHelper(nums, i + 1),
-        #                  self.sum[nums[i]])
-        return self.dp[i]
+            else:
+                max_v = max(max_v, self.deleteAndEarnHelper(widget_nums, i))
+        self.dp[index] = max_v + cur_value
+
+        return self.dp[index]
 
 
 # leetcode submit region end(Prohibit modification and deletion)
 
 s = Solution()
 nums = [3, 4, 2]
-nums = [2, 2, 3, 3, 3, 4]
+nums = [4, 2, 2, 3, 3, 3]
 # nums = [3, 1]
 print(s.deleteAndEarn(nums))
