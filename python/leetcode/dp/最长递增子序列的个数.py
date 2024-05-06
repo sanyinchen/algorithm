@@ -1,35 +1,43 @@
+from functools import lru_cache
 from typing import List
 
 
 class Solution:
     def findNumberOfLIS(self, nums: List[int]) -> int:
-        self.dp = [-1 for _ in range(len(nums))]
-        self.memo = {}
-        max_v = -1
-        for i in range(len(nums)):
-            max_v = max(self.dfs(nums, i), max_v)
-        return self.memo[max_v]
+        if len(nums) == 1:
+            return 1
+        dp = [[[] for _ in range(len(nums))] for _ in range(len(nums))]
+        print(dp)
 
-    def dfs(self, nums: List[int], index: int) -> int:
-        if self.dp[index] != -1:
-            return self.dp[index]
+        def dfs(end: int) -> int:
+            max_v = 1
+            for i in range(end):
+                if len(dp[i][end]) != 0:
+                    max_v = max(dp[i][end][0], max_v)
+                    continue
+                if nums[i] < nums[end]:
+                    max_v = max(dfs(i) + 1, max_v)
+                    if len(dp[i][end]) == 0:
+                        dp[i][end].append(max_v)
+                        dp[i][end].append(1)
+                    else:
+                        dp[i][end][1] += 1
 
-        max_v = 1
-        for i in range(index + 1):
-            if nums[i] < nums[index]:
-                max_v = max(self.dfs(nums, i) + 1, max_v)
-                if max_v in self.memo:
-                    self.memo[max_v] += 1
-                else:
-                    self.memo[max_v] = 1
-            else:
-                self.memo[max_v] = 1
-        # print(index, max_v)
-        self.dp[index] = max_v
-        return self.dp[index]
+                    print(i, end, max_v)
+
+            return max_v
+
+        for i in range(0, len(nums)):
+            max_v = dfs(i)
+
+
+        print(dp)
+
+        return
 
 
 s = Solution()
-nums = [1]
-nums = [1, 2, 4, 3, 5, 4, 7, 2]
+# nums = [1, 2, 4, 3, 5, 4, 7, 2]
+# nums = [1, 2, 4, 3, 5, 4, 7, 2]
+nums = [1, 3, 5, 4, 7]
 print(s.findNumberOfLIS(nums))
