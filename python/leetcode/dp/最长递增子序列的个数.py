@@ -7,7 +7,8 @@ class Solution:
         if len(nums) == 1:
             return 1
         dp = [[[] for _ in range(len(nums))] for _ in range(len(nums))]
-        print(dp)
+
+        # print(dp)
 
         def dfs(end: int) -> int:
             max_v = 1
@@ -23,17 +24,26 @@ class Solution:
                     else:
                         dp[i][end][1] += 1
 
-                    print(i, end, max_v)
+                # print(i, end, max_v)
 
             return max_v
 
         for i in range(0, len(nums)):
-            max_v = dfs(i)
+            dfs(i)
 
+        max_v = 0
+        max_times = 0
+        for i in range(len(dp)):
+            for j in range(len(dp[0])):
+                if len(dp[i][j]) == 0:
+                    continue
+                if max_v == dp[i][j][0]:
+                    max_times += 1
+                if max_v < dp[i][j][0]:
+                    max_times = 1
+                    max_v = dp[i][j][0]
 
-        print(dp)
-
-        return
+        return max_times
 
 
 s = Solution()
