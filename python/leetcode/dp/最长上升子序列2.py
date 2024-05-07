@@ -25,7 +25,7 @@ class Solution:
         return
 
 
-nums = [1, 3, 6, 7, 9, 4, 10, 5, 6]
+nums = [1, 2, 4, 3, 5, 4, 7, 2]
 # nums = [1, 2, 3]
 s = Solution()
 s.lengthOfLIS(nums)
