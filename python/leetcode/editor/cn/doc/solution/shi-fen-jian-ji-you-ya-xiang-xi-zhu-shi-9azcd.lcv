@@ -1,0 +1,41 @@
+![QQ图片20210212125847.jpg](https://pic.leetcode-cn.com/1613713102-jhTTuy-QQ%E5%9B%BE%E7%89%8720210212125847.jpg)
+
+# 步骤简洁清晰 主要看到很多题解不知道为什么那么多步骤 就写下来自己的解题思路 希望能对大家有所帮助
+
+* 
+
+```
+int findNumberOfLIS(int* nums, int numsSize){
+    if(!numsSize)   return 0;
+    int dp[2001],paths[2001],i,j,max = 1,ret = 0;
+    for(i=0;i<numsSize;i++)
+    {
+        dp[i] = 1;//至少长度为1
+        paths[i] = 1;//至少一种路径
+        for(j=0;j<i;j++)
+        {
+            if(nums[i] > nums[j])
+            {
+                //当我们现在的长度比原来长度+1小的时候 替换当前长度 并记录当前长度有几种路径
+                if(dp[j] + 1 > dp[i])
+                {
+                    dp[i] = dp[j] + 1;
+                    paths[i] = paths[j];
+                }
+                else if(dp[j] + 1 == dp[i])//else if意味着当重复出现当前长度时 我们只需要往上面叠加路径数即可
+                    paths[i] += paths[j];
+            }
+        }
+        if(dp[i] > max) //当大于目前现有最大自序列个数时 替换并且记录
+        {
+            max = dp[i];
+            ret = paths[i];
+        }
+        else if(dp[i] == max) //当重复出现最大最大自序列长度时 叠加长度即可
+            ret += paths[i];
+    }
+    return ret;
+}
+```
+
+**看懂点个赞即可 qwq**
