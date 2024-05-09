@@ -36,42 +36,60 @@ from typing import List
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
+
+class SegmentTree:
+    def __init__(self, nums):
+        self.n = len(nums)
+        # 构造满二叉树
+        self.tree = [0] * (2 * self.n + 2)
+
+    def update(self, index, value):
+        def update_node(node, start, end):
+            if start == end:
+                self.tree[node] = value
+            else:
+                # 执行整数除法并向下取整
+                mid = (start + end) // 2
+                if start <= index <= mid:
+                    update_node(2 * node, start, mid)
+                else:
+                    update_node(2 * node + 1, mid + 1, end)
+                self.tree[node] = self.tree[2 * node] + self.tree[2 * node + 1]
+
+        update_node(1, 0, self.n - 1)
+
+    def query(self, query_start, query_end):
+        def query_range(node, start, end, query_start, query_end):
+            if query_start > end or query_end < start:
+                return 0
+            if query_start <= start and query_end >= end:
+                return self.tree[node]
+            mid = (start + end) // 2
+            left_sum = query_range(2 * node, start, mid, query_start, query_end)
+            right_sum = query_range(2 * node + 1, mid + 1, end, query_start, query_end)
+            return left_sum + right_sum
+
+        return query_range(1, 0, self.n - 1, query_start, query_end)
+
+
 class Solution:
     def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
 
-        nums = sorted(envelopes, key=lambda x: x[0] * x[1])
-        # print(nums)
-        dp = [-1] * len(nums)
-
-        def find(l: int, r: int, val: int) -> int:
-            if l < r:
-                return -1
-            if l < 0 or r >= len(nums):
-                return -1
-            if val > nums[r][0] * nums[r][1]:
-                return -1
-            if val < [l][0] * nums[l][1]:
-                return -1
-            mid = (l + r) // 2
-            left = find(l, mid, val)
-            right = find(mid + 1, r, val)
-            return -1
-
-        def dfs(end: int) -> int:
-            if dp[end] != -1:
-                return dp[end]
-            max_v = 1
-            for i in range(end):
-                if nums[i][0] < nums[end][0] and nums[i][1] < nums[end][1]:
-                    cur = dfs(i) + 1
-                    if max_v < cur:
-                        max_v = cur
-            dp[end] = max_v
-            return dp[end]
-
+        envelopes = sorted(envelopes, key=lambda x: (x[0], -x[1]))
+        print(envelopes)
+        nums = []
+        for i in range(len(envelopes)):
+            nums.append(envelopes[i][1])
+        print(nums)
+        dpSegmentTree = SegmentTree(nums)
         max_v = 1
+
         for i in range(len(nums)):
-            max_v = max(dfs(i), max_v)
+            res = dpSegmentTree.query(1, nums[i] - 1) + 1
+            print(i, res)
+            max_v = max(max_v, res)
+            dpSegmentTree.update(nums[i], res)
+
         return max_v
 
 

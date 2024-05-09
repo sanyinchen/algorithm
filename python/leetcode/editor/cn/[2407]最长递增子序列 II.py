@@ -55,26 +55,31 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 from functools import lru_cache
+
 from typing import List
 
 
 class SegmentTree:
-    def __init__(self, nums):
-        self.n = len(nums)
-        # 构造满二叉树
-        self.tree = [0] * (2 * self.n + 2)
+    def __init__(self, n):
+        self.n = n
+        self.tree = [0] * (4 * self.n)
 
-        def build(nums, node, start, end):
+    def update(self, index, value):
+        def update_node(node, start, end):
             if start == end:
-                self.tree[node] = nums[start]
+                # print('[', start, ',', end, ']', '==>', node, value)
+                self.tree[node] = value
             else:
                 # 执行整数除法并向下取整
                 mid = (start + end) // 2
-                build(nums, 2 * node, start, mid)
-                build(nums, 2 * node + 1, mid + 1, end)
-                self.tree[node] = self.tree[2 * node] + self.tree[2 * node + 1]
+                if start <= index <= mid:
+                    update_node(2 * node, start, mid)
+                else:
+                    update_node(2 * node + 1, mid + 1, end)
+                self.tree[node] = max(self.tree[2 * node], self.tree[2 * node + 1])
+                # print('b[', start, ',', end, ']', '==>', node, value)
 
-        build(nums, 1, 0, self.n - 1)
+        update_node(1, 0, self.n - 1)
 
     def query(self, query_start, query_end):
         def query_range(node, start, end, query_start, query_end):
@@ -83,38 +88,42 @@ class SegmentTree:
             if query_start <= start and query_end >= end:
                 return self.tree[node]
             mid = (start + end) // 2
-            left_sum = query_range(2 * node, start, mid, query_start, query_end)
-            right_sum = query_range(2 * node + 1, mid + 1, end, query_start, query_end)
-            return left_sum + right_sum
+            return max(query_range(2 * node, start, mid, query_start, query_end),
+                       query_range(2 * node + 1, mid + 1, end, query_start, query_end))
 
         return query_range(1, 0, self.n - 1, query_start, query_end)
+
+    def print(self):
+        print(self.tree)
 
 
 class Solution:
     def lengthOfLIS(self, nums: List[int], k: int) -> int:
-
-        dp = [-1 for _ in range(len(nums))]
-        segmentTree = SegmentTree(nums)
-
-        def dfs(end: int) -> int:
-            if dp[end] != -1:
-                return dp[end]
-            max_v = 1
-            for i in range(end):
-                if (nums[end] - k) <= nums[i] < nums[end]:
-                    max_v = max(dfs(i) + 1, max_v)
-            dp[end] = max_v
-            return max_v
-
-        max_v = 1
+        if len(nums) == 1:
+            return 1
+        base_min = min(nums)
+        base = 0
+        if base_min <= 0:
+            base = 1 - base_min
+        # print(base)
+        nums = [x + base for x in nums]
+        max_v = max(nums)
+        dpSegmentTree = SegmentTree(max_v)
         for i in range(len(nums)):
-            max_v = max(max_v, dfs(i))
+            cur = nums[i]
+            query = dpSegmentTree.query(max(cur - k - 1, 0), cur - 1)
+            # print('query', 1, cur - 1, query)
+            # print('set', cur, query + 1)
+            dpSegmentTree.update(cur, query + 1)
+            # dpSegmentTree.print()
 
-        return max_v
+        return dpSegmentTree.query(0, max_v - 1)
 
 
 # leetcode submit region end(Prohibit modification and deletion)
 s = Solution()
-nums = [4, 2, 1, 4, 3, 4, 5, 8, 15]
-k = 3
+nums = [7, 4, 5, 1, 8, 12, 4, 7]
+k = 5
+# nums = [1, 5]
+# k = 1
 print(s.lengthOfLIS(nums, k))

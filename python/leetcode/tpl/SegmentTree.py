@@ -1,8 +1,9 @@
+# http://toughcoder.net/blog/2022/08/23/rmq-made-easy/
 class SegmentTree:
     def __init__(self, nums):
         self.n = len(nums)
         # 构造满二叉树
-        self.tree = [0] * (2 * self.n + 2)
+        self.tree = [0] * (4 * self.n)
         self.build(nums, 1, 0, self.n - 1)
 
     def build(self, nums, node, start, end):
@@ -18,6 +19,7 @@ class SegmentTree:
     def update(self, index, value):
         def update_node(node, start, end):
             if start == end:
+                print(node, value)
                 self.tree[node] = value
             else:
                 # 执行整数除法并向下取整
@@ -45,12 +47,15 @@ class SegmentTree:
 
 
 # 测试
-nums = [1, 3, 5, 2, 7, 8]
+nums = [1, 2, 3]
 seg_tree = SegmentTree(nums)
 print("线段树结构创建成功")
+#
+# print("线段树查询结果：")
+# print("nums[0:2] 的区间和为：", seg_tree.query(0, 2))
+# print("nums[1:4] 的区间和为：", seg_tree.query(1, 4))
 
-print("线段树查询结果：")
-print("nums[1:4] 的区间和为：", seg_tree.query(1, 4))
+print("更新后，nums[1:4] 的区间和为：", seg_tree.query(0, 3))
 
-seg_tree.update(2, 6)
-print("更新后，nums[1:4] 的区间和为：", seg_tree.query(1, 4))
+seg_tree.update(0, 6)
+print("更新后，nums[1:4] 的区间和为：", seg_tree.query(0, 3))
