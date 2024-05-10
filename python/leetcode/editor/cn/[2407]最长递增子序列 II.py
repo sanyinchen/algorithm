@@ -51,12 +51,10 @@
 #  
 # 
 #  Related Topics 树状数组 线段树 队列 数组 分治 动态规划 单调队列 👍 78 👎 0
+from typing import List
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-from functools import lru_cache
-
-from typing import List
 
 
 class SegmentTree:
@@ -79,45 +77,61 @@ class SegmentTree:
                 self.tree[node] = max(self.tree[2 * node], self.tree[2 * node + 1])
                 # print('b[', start, ',', end, ']', '==>', node, value)
 
-        update_node(1, 0, self.n - 1)
+        update_node(1, 1, self.n)
 
-    def query(self, query_start, query_end):
+    def query2(self, query_start, query_end):
         def query_range(node, start, end, query_start, query_end):
             if query_start > end or query_end < start:
                 return 0
-            if query_start <= start and query_end >= end:
+            if query_start <= start and end <= query_end:
                 return self.tree[node]
             mid = (start + end) // 2
-            return max(query_range(2 * node, start, mid, query_start, query_end),
-                       query_range(2 * node + 1, mid + 1, end, query_start, query_end))
+            res = 0
+            if query_start <= mid:
+                res = query_range(2 * node, start, mid, query_start, query_end)
+            if mid < query_end:
+                res = max(res, query_range(2 * node + 1, mid + 1, end, query_start, query_end))
+            return res
 
-        return query_range(1, 0, self.n - 1, query_start, query_end)
+        return query_range(1, 1, self.n, query_start, query_end)
 
-    def print(self):
-        print(self.tree)
+    # def query(self, start, end):
+    #     def query_range(node, query_start, query_end, L, R):
+    #
+    #         if query_start > R or query_end < L:
+    #             return 0
+    #         if L <= query_start and query_end <= R:
+    #             return self.tree[node]
+    #         mid = (query_start + query_end) // 2
+    #         res = 0
+    #         if L <= mid:
+    #             res = query_range(2 * node, query_start, mid, L, R)
+    #         if R > mid:
+    #             res = max(res, query_range(2 * node + 1, mid + 1, query_end, L, R))
+    #         return res
+    #
+    #     return query_range(1, 1, self.n, start, end)
+    # return query2(1, 1, self.n, L, R)
 
 
 class Solution:
     def lengthOfLIS(self, nums: List[int], k: int) -> int:
-        if len(nums) == 1:
-            return 1
-        base_min = min(nums)
-        base = 0
-        if base_min <= 0:
-            base = 1 - base_min
-        # print(base)
-        nums = [x + base for x in nums]
         max_v = max(nums)
         dpSegmentTree = SegmentTree(max_v)
         for i in range(len(nums)):
             cur = nums[i]
-            query = dpSegmentTree.query(max(cur - k - 1, 0), cur - 1)
-            # print('query', 1, cur - 1, query)
-            # print('set', cur, query + 1)
-            dpSegmentTree.update(cur, query + 1)
-            # dpSegmentTree.print()
+            if cur == 1:
+                dpSegmentTree.update(cur, 1)
+            else:
+                query = dpSegmentTree.query2(max(cur - k, 1), cur - 1)
+                # query2 = dpSegmentTree.query2(1, 1, u, max(cur - k, 1), cur - 1)
+                res = query + 1
+                # print('query', max(cur - k, 1), cur - 1, query)
+                # print('set', cur, res)
+                dpSegmentTree.update(cur, res)
+                # print(dpSegmentTree.tree)
 
-        return dpSegmentTree.query(0, max_v - 1)
+        return dpSegmentTree.tree[1]
 
 
 # leetcode submit region end(Prohibit modification and deletion)

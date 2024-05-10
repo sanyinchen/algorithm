@@ -78,14 +78,13 @@ class SegmentTree:
             if query_start <= start and query_end <= end:
                 return self.tree[node]
             mid = (start + end) // 2
-            # res = 0
-            # if query_start <= mid:
-            #     res = query_range(2 * node, start, mid, query_start, query_end)
-            # if query_end > mid:
-            #     res = max(res, query_range(2 * node + 1, mid + 1, end, query_start, query_end))
-            #
-            return max(query_range(2 * node, start, mid, query_start, query_end),
-                       query_range(2 * node + 1, mid + 1, end, query_start, query_end))
+            res = 0
+            if query_start <= mid:
+                res = query_range(2 * node, start, mid, query_start, query_end)
+            if query_end > mid:
+                res = max(res, query_range(2 * node + 1, mid + 1, end, query_start, query_end))
+
+            return res
 
         return query_range(1, 1, self.n, query_start, query_end)
 
@@ -125,7 +124,7 @@ nums = [1, 2, 1, 4, 3, 4]
 # nums = [1, 2, 1, 4, 3, 4]
 # nums = [0, 1, 0, 3, 2, 3]
 # nums = [1, 2, 3]
-nums = [2, 2]
+nums = [1, 1]
 # nums = [7, 7, 7, 7, 7]
 
 # nums = [1, 2]

@@ -38,14 +38,14 @@ from typing import List
 # leetcode submit region begin(Prohibit modification and deletion)
 
 class SegmentTree:
-    def __init__(self, nums):
-        self.n = len(nums)
-        # 构造满二叉树
-        self.tree = [0] * (2 * self.n + 2)
+    def __init__(self, n):
+        self.n = n
+        self.tree = [0] * (4 * self.n)
 
     def update(self, index, value):
         def update_node(node, start, end):
             if start == end:
+                # print('[', start, ',', end, ']', '==>', node, value)
                 self.tree[node] = value
             else:
                 # 执行整数除法并向下取整
@@ -54,39 +54,52 @@ class SegmentTree:
                     update_node(2 * node, start, mid)
                 else:
                     update_node(2 * node + 1, mid + 1, end)
-                self.tree[node] = self.tree[2 * node] + self.tree[2 * node + 1]
+                self.tree[node] = max(self.tree[2 * node], self.tree[2 * node + 1])
+                # print('b[', start, ',', end, ']', '==>', node, value)
 
-        update_node(1, 0, self.n - 1)
+        update_node(1, 1, self.n)
+
+    def query2(self, o: int, l: int, r: int, L: int, R: int) -> int:  # L 和 R 在整个递归过程中均不变，将其大写，视作常量
+        if L <= l and r <= R: return self.tree[o]
+        res = 0
+        m = (l + r) // 2
+        if L <= m: res = self.query2(o * 2, l, m, L, R)
+        if R > m: res = max(res, self.query2(o * 2 + 1, m + 1, r, L, R))
+        return res
 
     def query(self, query_start, query_end):
-        def query_range(node, start, end, query_start, query_end):
-            if query_start > end or query_end < start:
-                return 0
-            if query_start <= start and query_end >= end:
-                return self.tree[node]
-            mid = (start + end) // 2
-            left_sum = query_range(2 * node, start, mid, query_start, query_end)
-            right_sum = query_range(2 * node + 1, mid + 1, end, query_start, query_end)
-            return left_sum + right_sum
+        def query_range(node, L, R, query_start, query_end):
 
-        return query_range(1, 0, self.n - 1, query_start, query_end)
+            if query_start > R or query_end < L:
+                return 0
+            if L <= query_start and query_end <= R:
+                return self.tree[node]
+            mid = (query_start + query_end) // 2
+            res = 0
+            if L <= mid:
+                res = query_range(2 * node, L, R, query_start, mid)
+            if R > mid:
+                res = max(res, query_range(2 * node + 1, L, R, mid + 1, query_end))
+            return res
+
+        return query_range(1, query_start, query_end, 1, self.n)
 
 
 class Solution:
     def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
 
         envelopes = sorted(envelopes, key=lambda x: (x[0], -x[1]))
-        print(envelopes)
+        # print(envelopes)
         nums = []
         for i in range(len(envelopes)):
             nums.append(envelopes[i][1])
-        print(nums)
-        dpSegmentTree = SegmentTree(nums)
+        # print(nums)
+        dpSegmentTree = SegmentTree(max(nums))
         max_v = 1
 
         for i in range(len(nums)):
             res = dpSegmentTree.query(1, nums[i] - 1) + 1
-            print(i, res)
+            # print(i, res)
             max_v = max(max_v, res)
             dpSegmentTree.update(nums[i], res)
 

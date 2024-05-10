@@ -1,70 +1,71 @@
 from typing import List
 
 
-# class Solution:
-#     def lengthOfLIS(self, nums: List[int]) -> int:
-#         self.dp = [-1 for _ in range(len(nums))]
-#         max_v = -1
-#         for i in range(len(nums)):
-#             max_v = max(self.lengthOfLISHelper(nums, i), max_v)
-#         return max_v
-#
-#     def lengthOfLISHelper(self, nums: List[int], index: int) -> int:
-#         # print(index)
-#         if self.dp[index] != -1:
-#             return self.dp[index]
-#         max_v = 1
-#         for i in range(index + 1):
-#             if nums[i] < nums[index]:
-#                 max_v = max(self.lengthOfLISHelper(nums, i) + 1, max_v)
-#         # print(index, max_v)
-#         self.dp[index] = max_v
-#         return self.dp[index]
+class SegmentTree:
+    def __init__(self, n):
+        self.n = n
+        self.tree = [0] * (4 * self.n)
+
+    def update(self, index, value):
+        def update_node(node, start, end):
+            if start == end:
+                # print('[', start, ',', end, ']', '==>', node, value)
+                self.tree[node] = value
+            else:
+                # 执行整数除法并向下取整
+                mid = (start + end) // 2
+                if start <= index <= mid:
+                    update_node(2 * node, start, mid)
+                else:
+                    update_node(2 * node + 1, mid + 1, end)
+                self.tree[node] = max(self.tree[2 * node], self.tree[2 * node + 1])
+                # print('b[', start, ',', end, ']', '==>', node, value)
+
+        update_node(1, 1, self.n)
+
+    def getNode(self, index):
+        if index <= 0 or index > self.n:
+            return 0
+        return self.tree[index]
+
+    def query(self, query_start, query_end):
+        def query_range(node, L, R, query_start, query_end):
+
+            if query_start > R or query_end < L:
+                return 0
+            if L <= query_start and query_end <= R:
+                return self.tree[node]
+            mid = (query_start + query_end) // 2
+            res = 0
+            if L <= mid:
+                res = query_range(2 * node, L, R, query_start, mid)
+            if R > mid:
+                res = max(res, query_range(2 * node + 1, L, R, mid + 1, query_end))
+            return res
+
+        return query_range(1, query_start, query_end, 1, self.n)
+
 
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
-        u = max(nums)
-        mx = [0] * (4 * u)
-        k = 1
-
-        def modify(o: int, l: int, r: int, i: int, val: int) -> None:
-            if l == r:
-                print('[', l, ',', r, ']', '==>', o, val)
-                mx[o] = val
-                return
-            m = (l + r) // 2
-            if i <= m:
-                modify(o * 2, l, m, i, val)
+        base_min = min(nums)
+        base = 0
+        if base_min <= 0:
+            base = 1 - base_min
+        nums = [x + base for x in nums]
+        # print(nums)
+        max_v = max(nums)
+        dpSegmentTree = SegmentTree(max_v)
+        for i in range(len(nums)):
+            cur = nums[i]
+            if cur == 1:
+                dpSegmentTree.update(cur, 1)
             else:
-                modify(o * 2 + 1, m + 1, r, i, val)
-            mx[o] = max(mx[o * 2], mx[o * 2 + 1])
-            print('b[', l, ',', r, ']', '==>', o, mx[o])
+                query = dpSegmentTree.query(1, cur - 1)
+                res = query + 1
+                dpSegmentTree.update(cur, res)
 
-        # 返回区间 [L,R] 内的最大值
-        def query(o: int, l: int, r: int, L: int, R: int) -> int:  # L 和 R 在整个递归过程中均不变，将其大写，视作常量
-            print('query', l, r, ' in ', L, R)
-            if L <= l and r <= R:
-                print('2 query', l, r, ' in ', L, R,mx[o],o)
-                return mx[o]
-            res = 0
-            m = (l + r) // 2
-            if L <= m: res = query(o * 2, l, m, L, R)
-            if R > m: res = max(res, query(o * 2 + 1, m + 1, r, L, R))
-            print('3 query', l, r, ' in ', L, R, res)
-            return res
-
-        for x in nums:
-            if x == 1:
-                modify(1, 1, u, 1, 1)
-            else:
-                q = query(1, 1, u, 1, x - 1)
-                print('q', 1, x - 1, q)
-                res = 1 + q
-                print('set', x, res)
-                modify(1, 1, u, x, res)
-                print(mx)
-
-        return query(1, 1, u, 1, u)
+        return dpSegmentTree.getNode(1)
 
 
 # nums = [10, 9, 2, 5, 3, 7, 101, 18]
@@ -72,6 +73,6 @@ class Solution:
 # # nums = [3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12]
 # # nums = [7, 7, 7, 7, 7, 7, 7]
 # nums = [10, 9, 2, 5, 3, 7, 20, 18]
-nums = [1, 1]
+nums = [0, 1, 0, 3, 2, 3]
 s = Solution()
 print(s.lengthOfLIS(nums))
