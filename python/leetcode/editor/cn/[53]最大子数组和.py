@@ -47,7 +47,19 @@ from typing import List
 class SegmentTree:
     def __init__(self, nums):
         self.n = len(nums)
+        # 构造满二叉树
         self.tree = [0] * (4 * self.n)
+        self.build(nums, 1, 0, self.n - 1)
+
+    def build(self, nums, node, start, end):
+        if start == end:
+            self.tree[node] = nums[start]
+        else:
+            # 执行整数除法并向下取整
+            mid = (start + end) // 2
+            self.build(nums, 2 * node, start, mid)
+            self.build(nums, 2 * node + 1, mid + 1, end)
+            self.tree[node] = self.tree[2 * node] + self.tree[2 * node + 1]
 
     def update(self, index, value):
         def update_node(node, start, end):
@@ -66,23 +78,26 @@ class SegmentTree:
         update_node(1, 0, self.n - 1)
 
     def query(self, query_start, query_end):
-        def query_range(node, query_start, query_end, L, R):
-            if query_start > R or query_end < L:
+        def query_range(node, start, end, query_start, query_end):
+            if query_start > end or query_end < start:
                 return 0
-            if query_start <= L and query_end >= R:
+            if query_start <= start and query_end >= end:
                 return self.tree[node]
-            mid = (query_start + query_end) // 2
-            res = 0
-            if L <= query_start <= mid:
-                res += query_range(2 * node, query_start, mid, L, R)
-            else:
-                res = query_range(2 * node + 1, mid + 1, query_end, L, R)
-            return res
+            mid = (start + end) // 2
+            left_sum = query_range(2 * node, start, mid, query_start, query_end)
+            right_sum = query_range(2 * node + 1, mid + 1, end, query_start, query_end)
+            return left_sum + right_sum
 
-        return query_range(1, query_start, query_end, 0, self.n - 1)
+        return query_range(1, 0, self.n - 1, query_start, query_end)
 
 
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
+        s = SegmentTree(nums)
+        print(s.tree)
+        return -1
+
 
 # leetcode submit region end(Prohibit modification and deletion)
+s = Solution()
+s.maxSubArray([1, 2, 3, 0])
