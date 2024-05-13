@@ -30,25 +30,36 @@
 #  
 # 
 #  Related Topics 数组 动态规划 👍 2235 👎 0
-import sys
-from typing import List
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
-        dp_max = [0] * len(nums)
-        dp_min = [0] * len(nums)
-        dp_min[0] = nums[0]
-        dp_max[0] = nums[0]
-        for i in range(1, len(nums)):
-            dp_max[i] = max(dp_max[i - 1] * nums[i], dp_min[i - 1] * nums[i], nums[i])
-            dp_min[i] = min(dp_max[i - 1] * nums[i], dp_min[i - 1] * nums[i], nums[i])
 
-        return max(dp_max)
+import sys
+from functools import lru_cache
+from typing import List
+
+
+class Solution:
+    def __init__(self):
+        self.dp = {}
+
+    def maxProduct(self, nums: List[int]) -> int:
+        n = len(nums)
+        self.dp = {}
+
+        max_v = nums[0]
+        for i in range(len(nums)):
+            cur_sum = nums[i]
+            tmp = cur_sum
+            max_v = max(max_v, tmp)
+            for j in range(i + 1, len(nums)):
+                tmp *= nums[j]
+                max_v = max(max_v, tmp)
+        return max_v
 
 
 # leetcode submit region end(Prohibit modification and deletion)
-nums = [2, 3, -2, 4]
 s = Solution()
+nums = [-2, 3, -4]
+nums = [-2, 0, -1, -3, -3]
 print(s.maxProduct(nums))
