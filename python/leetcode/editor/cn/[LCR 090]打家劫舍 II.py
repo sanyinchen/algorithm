@@ -50,4 +50,32 @@ from typing import List
 class Solution:
     def rob(self, nums: List[int]) -> int:
 
+        dp = [-1] * len(nums)
+
+        def dfs(start: int, end) -> int:
+            if dp[start] != -1:
+                return dp[start]
+            max_v = 0
+            for i in range(start + 2, end):
+                max_v = max(max_v, dfs(i, end))
+            dp[start] = max_v + nums[start]
+            return max_v
+
+        # 选第一家
+        max_v_1 = 0
+        for i in range(len(nums) - 1):
+            max_v_1 = max(max_v_1, dfs(i, len(nums) - 1))
+
+        dp = [-1] * len(nums)
+        # 不选第一家
+        max_v_0 = 0
+        for i in range(1, len(nums) - 1):
+            max_v_0 = max(max_v_0, dfs(i, len(nums) - 1))
+        print(max_v_1,max_v_0)
+        return max(max_v_1, max_v_0 + nums[0], max_v_0 + nums[-1])
+
+
 # leetcode submit region end(Prohibit modification and deletion)
+s = Solution()
+nums = [1, 2, 3, 1]
+print(s.rob(nums))
