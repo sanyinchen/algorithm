@@ -1,0 +1,36 @@
+class Solution {
+
+        private void move2Last(int[] nums, int i) {
+            if (i >= nums.length) {
+                return;
+            }
+            int temp;
+            for (int index = i; index < nums.length - 1; index++) {
+                temp = nums[index];
+                nums[index] = nums[index + 1];
+                nums[index + 1] = temp;
+            }
+        }
+
+        public int removeDuplicates(int[] nums) {
+            int times = 1;
+            int len = nums.length;
+            for (int i = 1; i < len; i++) {
+                if (nums[i] == nums[i - 1]) {
+                    times++;
+                } else {
+                    times = 1;
+                }
+                if (times > 2) {
+                    len--;
+                    i--;
+                    times--;
+                    move2Last(nums, i);
+
+                }
+            }
+            return len;
+        }
+    }
+//runtime:2 ms
+//memory:35.4 MB

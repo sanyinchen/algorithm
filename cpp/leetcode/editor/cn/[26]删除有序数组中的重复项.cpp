@@ -72,13 +72,11 @@ public:
     {
         if (nums.empty()) { return 0; }
         int j = 0;
-        int pre=nums[j];
         for (int i = 1; i < nums.size(); ++i)
         {
-            if (nums[i] != pre)
+            if (nums[i] != nums[j])
             {
                 j++;
-                pre=nums[i];
                 if (i!=j)
                 {
                     swap(nums[i], nums[j]);

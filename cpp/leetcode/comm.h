@@ -8,5 +8,6 @@
 #include <algorithm>
 #include <vector>
 #include <iostream>
+#include <array>
 
 #endif //COMMOM_H
