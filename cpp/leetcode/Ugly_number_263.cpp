@@ -49,3 +49,6 @@ public:
         return num == 1;
     }
 };
+int main() {
+    Solution s;
+}
