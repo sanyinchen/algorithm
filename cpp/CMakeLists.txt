@@ -27,4 +27,3 @@ set(SOURCE_FILES leetcode/Subarray_sum_equals_k_560.cpp)
 #leetcode/Binary_watch_401.cpp leetcode/Third_maximum_number_414.cpp)
 
 add_executable(demo ${SOURCE_FILES})
-add_executable([1]两数之和 leetcode/editor/cn/[1]两数之和.cpp)
