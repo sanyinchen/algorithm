@@ -1,0 +1,42 @@
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+
+        _k = len(nums) - k
+        print('k', k, '_k', _k)
+
+        def dfs(left: int, right: int) -> int:
+            pIndex = (left + right) // 2
+            left_array = []
+            right_array = []
+            mid_array = []
+            for i in range(left, right):
+                if nums[i] < nums[pIndex]:
+                    left_array.append(nums[i])
+                    continue
+                if nums[i] > nums[pIndex]:
+                    right_array.append(nums[i])
+                    continue
+                mid_array.append(nums[i])
+            tmp = left_array + mid_array + right_array
+            for i in range(len(tmp)):
+                nums[i + left] = tmp[i]
+
+            if pIndex == _k:
+                return nums[pIndex]
+            if pIndex > _k:
+                return dfs(left, pIndex - 1)
+            else:
+                return dfs(pIndex + 1, right)
+
+        return dfs(0, len(nums))
+
+
+
+# total_testcases:32
+# total_correct:25
+# input_formatted:[7,6,5,4,3,2,1]
+5
+# expected_output:3
+# code_output:1
+# last_testcase:[7,6,5,4,3,2,1]
+5

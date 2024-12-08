@@ -9,5 +9,6 @@
 #include <vector>
 #include <iostream>
 #include <array>
-
+#include <functional>
+#include <numeric>
 #endif //COMMOM_H
