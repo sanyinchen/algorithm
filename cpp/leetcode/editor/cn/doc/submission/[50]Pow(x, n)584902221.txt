@@ -1,0 +1,25 @@
+class Solution {
+public:
+    double myPow(double x, int n) {
+        if(n<0){
+            return 1.0/fastPower(x,-n);
+        }
+        return fastPower(x,n);
+    }
+    // 快速幂函数，计算 (base^exp)
+    double fastPower(double base,  long exp) {
+        if (exp == 0) {
+            return 1; // 任意数的 0 次方为 1
+        }
+        double  half = fastPower(base, exp / 2); // 递归计算一半的幂
+        half = (half * half) ; // 平方
+        if (exp % 2 != 0) {
+            half = (half * base); // 如果指数是奇数，还需额外乘一次 base
+        }
+        return half;
+    }
+};
+
+//runtime_error:Line 5: Char 36: runtime error: negation of -2147483648 cannot be represented in type 'int'; cast to an unsigned type to negate this value to itself (solution.cpp)
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:14:36
+//last_testcase:1.00000 -2147483648
