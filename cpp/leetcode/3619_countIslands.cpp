@@ -109,9 +109,9 @@ public:
     }
 };
 
-int main() {
-    Solution s;
-    // vector<vector<int> > grid = {{0, 2, 1, 0, 0}, {0, 5, 0, 0, 5}, {0, 0, 1, 0, 0}, {0, 1, 4, 7, 0}, {0, 2, 0, 0, 8}};
-    vector<vector<int> > grid = {{0, 0, 0}, {0, 0, 1}, {11, 0, 6}, {0, 10, 2}, {0, 0, 0}, {8, 0, 0}};
-    cout << "res===>" << s.countIslands(grid, 19);
-}
+// int main() {
+//     Solution s;
+//     // vector<vector<int> > grid = {{0, 2, 1, 0, 0}, {0, 5, 0, 0, 5}, {0, 0, 1, 0, 0}, {0, 1, 4, 7, 0}, {0, 2, 0, 0, 8}};
+//     vector<vector<int> > grid = {{0, 0, 0}, {0, 0, 1}, {11, 0, 6}, {0, 10, 2}, {0, 0, 0}, {8, 0, 0}};
+//     cout << "res===>" << s.countIslands(grid, 19);
+// }
