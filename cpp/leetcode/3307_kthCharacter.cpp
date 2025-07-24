@@ -37,6 +37,7 @@ public:
                 if (op == 1) {
                     shift++;
                 }
+                cout << k << " " << str_len << endl;
             }
         };
         find_kth_char(0);
@@ -45,8 +46,8 @@ public:
     }
 };
 
-int main() {
-    Solution s;
-    vector<int> operations = {0, 1, 0, 1};
-    cout << s.kthCharacter(10, operations) << endl;
-}
+// int main() {
+//     Solution s;
+//     vector<int> operations = {0, 1, 0, 1};
+//     cout << s.kthCharacter(10, operations) << endl;
+// }
