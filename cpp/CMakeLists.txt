@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
 project(algorithm)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 11)
 
 include_directories(common)
 
@@ -10,8 +10,29 @@ include_directories(common)
 #set(Boost_USE_STATIC_RUNTIME OFF)
 #find_package(Boost 1.50 REQUIRED COMPONENTS filesystem)
 #message(STATUS "Boost version: ${Boost_VERSION}")
+file(COPY ${CMAKE_SOURCE_DIR}/codeforces/cf_input.txt DESTINATION ${CMAKE_BINARY_DIR})
 
-set(SOURCE_FILES leetcode/527_wordsAbbreviation.cpp)
+set(NIUKE_INPUT ${CMAKE_SOURCE_DIR}/niuke/niuke_input.txt)
+set(NIUKE_OUTPUT ${CMAKE_BINARY_DIR}/niuke_input.txt)
+# 复制文件，如果源文件有更新，就重新执行
+add_custom_command(
+        OUTPUT ${NIUKE_OUTPUT}
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different ${NIUKE_INPUT} ${NIUKE_OUTPUT}
+        DEPENDS ${NIUKE_INPUT}
+        COMMENT "Copying updated niuke_input.txt to build directory"
+)
+
+add_custom_target(niuke_input ALL DEPENDS ${NIUKE_OUTPUT})
+
+
+#set(SOURCE_FILES codeforces/1446_Knapsack.cpp)
+
+
+set(CMAKE_CXX_STANDARD 20)
+set(SOURCE_FILES leetcode/460_3_minJumps.cpp)
+
+#set(SOURCE_FILES niuke/296753.cpp)
+
 # set(SOURCE_FILES leetcode/Third_maximum_number_414.cpp leetcode/Univalued_binary_tree_965.cpp
 # leetcode/Arranging_coins_441.cpp leetcode/Binary_tree_right_side_view_199.cpp leetcode/Longest_palindrome_409.cpp)
 #set(SOURCE_FILES sort/quicksort.cpp sort/insertSort.cpp)
@@ -27,3 +48,4 @@ set(SOURCE_FILES leetcode/527_wordsAbbreviation.cpp)
 #leetcode/Binary_watch_401.cpp leetcode/Third_maximum_number_414.cpp)
 
 add_executable(demo ${SOURCE_FILES})
+add_dependencies(demo niuke_input)
