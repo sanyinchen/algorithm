@@ -34,8 +34,8 @@ public:
 };
 
 
-int main(int argc, char const* argv[]) {
-    Solution solution;
-    vector<int> nums({2, 3, 1, 1, 4});
-    cout << solution.jump(nums);
-}
+// int main(int argc, char const* argv[]) {
+//     Solution solution;
+//     vector<int> nums({2, 3, 1, 1, 4});
+//     cout << solution.jump(nums);
+// }

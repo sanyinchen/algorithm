@@ -73,8 +73,8 @@ public:
     }
 };
 
-int main() {
-    Solution s;
-    std::vector<int> nums{1, 2, 4, 6};
-    std::cout << s.minJumps(nums) << std::endl;    // 正确输出 2
-}
+// int main() {
+//     Solution s;
+//     std::vector<int> nums{1, 2, 4, 6};
+//     std::cout << s.minJumps(nums) << std::endl;    // 正确输出 2
+// }
