@@ -40,8 +40,7 @@
 //
 // Related Topics 递归 数学 👍 1411 👎 0
 
-
-#include "../../comm.h"
+#include <common.h>
 
 
 using namespace std;
@@ -79,8 +78,8 @@ public:
 
 //leetcode submit region end(Prohibit modification and deletion)
 
-int main()
-{
-    Solution s;
-    cout << s.myPow(1.00000, -2147483648) << endl;
-}
+// int main()
+// {
+//     Solution s;
+//     cout << s.myPow(1.00000, -2147483648) << endl;
+// }

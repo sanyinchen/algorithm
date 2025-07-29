@@ -50,7 +50,8 @@
 // Related Topics 数学 字符串 👍 23 👎 0
 
 
-#include"../../comm.h"
+#include <common.h>
+
 
 using namespace std;
 
@@ -74,7 +75,7 @@ array<array<int, 8>, 8> Solution::board = [] {
 }();
 //leetcode submit region end(Prohibit modification and deletion)
 
-int main() {
-    Solution s;
-    cout<<s.checkTwoChessboards("a1","c3");
-}
+// int main() {
+//     Solution s;
+//     cout<<s.checkTwoChessboards("a1","c3");
+// }

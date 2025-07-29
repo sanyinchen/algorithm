@@ -59,7 +59,7 @@
 // Related Topics 数组 双指针 👍 3687 👎 0
 
 
-#include "../../comm.h"
+#include <common.h>
 
 
 using namespace std;
@@ -89,13 +89,13 @@ public:
 
 //leetcode submit region end(Prohibit modification and deletion)
 
-int main()
-{
-    Solution s;
-    vector<int> nums{1,1,1,2,2,2,3,3,3,6};
-    cout<<s.removeDuplicates(nums)<<endl;
-    for (int i = 0; i < nums.size(); ++i)
-    {
-        cout<<nums[i]<<" ";
-    }
-}
+// int main()
+// {
+//     Solution s;
+//     vector<int> nums{1,1,1,2,2,2,3,3,3,6};
+//     cout<<s.removeDuplicates(nums)<<endl;
+//     for (int i = 0; i < nums.size(); ++i)
+//     {
+//         cout<<nums[i]<<" ";
+//     }
+// }

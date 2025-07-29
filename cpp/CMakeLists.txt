@@ -29,9 +29,13 @@ add_custom_target(niuke_input ALL DEPENDS ${NIUKE_OUTPUT})
 
 
 set(CMAKE_CXX_STANDARD 20)
+file(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/leetcode/editor/cn/*.cpp")
 set(SOURCE_FILES leetcode/460_3_minJumps.cpp)
 
 #set(SOURCE_FILES niuke/296753.cpp)
+
+#list(APPEND SOURCE_FILES leetcode/527_wordsAbbreviation.cpp)
+
 
 # set(SOURCE_FILES leetcode/Third_maximum_number_414.cpp leetcode/Univalued_binary_tree_965.cpp
 # leetcode/Arranging_coins_441.cpp leetcode/Binary_tree_right_side_view_199.cpp leetcode/Longest_palindrome_409.cpp)

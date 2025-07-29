@@ -19,7 +19,7 @@
 // Related Topics 数组 分治 快速选择 排序 堆（优先队列） 👍 236 👎 0
 
 
-#include"../../comm.h"
+#include <common.h>
 
 using namespace std;
 
@@ -73,11 +73,11 @@ public:
 
 //leetcode submit region end(Prohibit modification and deletion)
 
-int main() {
-    Solution s;
-    vector<int> arr = {1, 3, 5, 7, 2, 4, 6, 8};
-    vector<int> res = s.smallestK(arr, 4);
-    for (int i = 0; i < res.size(); i++) {
-        cout << res[i] << " ";
-    }
-}
+// int main() {
+//     Solution s;
+//     vector<int> arr = {1, 3, 5, 7, 2, 4, 6, 8};
+//     vector<int> res = s.smallestK(arr, 4);
+//     for (int i = 0; i < res.size(); i++) {
+//         cout << res[i] << " ";
+//     }
+// }

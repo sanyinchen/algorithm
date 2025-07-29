@@ -58,7 +58,8 @@
 // Related Topics 数组 双指针 👍 1155 👎 0
 
 
-#include"../../comm.h"
+#include <common.h>
+
 
 using namespace std;
 
@@ -95,10 +96,10 @@ public:
 };
 
 //leetcode submit region end(Prohibit modification and deletion)
-
-int main() {
-    Solution s;
-    vector<int> nums = {1, 1, 1, 2, 2, 3};
-    nums = {0, 0, 1, 1, 1, 1, 2, 3, 3};
-    cout << s.removeDuplicates(nums);
-}
+//
+// int main() {
+//     Solution s;
+//     vector<int> nums = {1, 1, 1, 2, 2, 3};
+//     nums = {0, 0, 1, 1, 1, 1, 2, 3, 3};
+//     cout << s.removeDuplicates(nums);
+// }

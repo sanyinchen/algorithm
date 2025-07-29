@@ -36,8 +36,8 @@
 //
 // Related Topics 数组 分治 快速选择 排序 堆（优先队列） 👍 103 👎 0
 
+#include <common.h>
 
-#include "../../comm.h"
 
 
 using namespace std;
@@ -136,19 +136,19 @@ public:
 
 //leetcode submit region end(Prohibit modification and deletion)
 
-int main()
-{
-    vector<int> vec = {2, 1};
-    int k = 1;
-    vec = {-1, 2, 0};
-    k = 2;
-
-    vec = {3,2,1,5,6,4};
-    k = 2;
-
-    vec = {3,3,3,3,3,3,3,3,3};
-    k=  1;
-    Solution s;
-
-    cout << s.findKthLargest(vec, k) << endl;
-}
+// int main()
+// {
+//     vector<int> vec = {2, 1};
+//     int k = 1;
+//     vec = {-1, 2, 0};
+//     k = 2;
+//
+//     vec = {3,2,1,5,6,4};
+//     k = 2;
+//
+//     vec = {3,3,3,3,3,3,3,3,3};
+//     k=  1;
+//     Solution s;
+//
+//     cout << s.findKthLargest(vec, k) << endl;
+// }

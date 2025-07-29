@@ -36,7 +36,7 @@
 // Related Topics 贪心 哈希表 字符串 👍 617 👎 0
 
 
-#include "../../comm.h"
+#include <common.h>
 
 
 using namespace std;
@@ -69,6 +69,6 @@ public:
 };
 //leetcode submit region end(Prohibit modification and deletion)
 
-int main() {
-    Solution s;
-}
+// int main() {
+//     Solution s;
+// }
