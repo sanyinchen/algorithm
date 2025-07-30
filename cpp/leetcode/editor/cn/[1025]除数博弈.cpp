@@ -68,8 +68,8 @@ public:
 };
 
 //leetcode submit region end(Prohibit modification and deletion)
-int main() {
-    Solution solution;
-    cout << solution.divisorGame(2) << endl;
-    return 0;
-}
+// int main() {
+//     Solution solution;
+//     cout << solution.divisorGame(2) << endl;
+//     return 0;
+// }

@@ -1,0 +1,18 @@
+
+#include <algorithm>
+#include <cstdio>
+#include <functional>
+#include <iostream>
+#include <unistd.h>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+using namespace std;
+
+# define  int  long long
+
+signed main() {
+    freopen("niuke_input.txt", "r", stdin);
+
+    return 0;
+}
