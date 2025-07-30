@@ -111,13 +111,13 @@ public:
     }
 };
 
-
-int main() {
-    vector<string> words = {
-        "like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"
-    };
-    Solution s;
-    vector<string> res = s.wordsAbbreviation(words);
-    for (auto &w: res) cout << w << endl;
-    return 0;
-}
+//
+// int main() {
+//     vector<string> words = {
+//         "like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"
+//     };
+//     Solution s;
+//     vector<string> res = s.wordsAbbreviation(words);
+//     for (auto &w: res) cout << w << endl;
+//     return 0;
+// }
