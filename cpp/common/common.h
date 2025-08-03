@@ -15,7 +15,7 @@
 #include <limits.h>
 #include <unordered_set>
 #include <memory>
-
+#include <map>
 using namespace std;
 #endif //COMMON_H
 template <typename T, size_t R, size_t C>

@@ -126,12 +126,12 @@ public:
 };
 
 //leetcode submit region end(Prohibit modification and deletion)
-int main() {
-    Solution solution;
-    string str = "catsanddog";
-    vector<string> words = {"cat", "cats", "and", "sand", "dog"};
-    for (const string& word : solution.wordBreak(str, words)) {
-        cout << word << endl;
-    }
-    return 0;
-}
+// int main() {
+//     Solution solution;
+//     string str = "catsanddog";
+//     vector<string> words = {"cat", "cats", "and", "sand", "dog"};
+//     for (const string& word : solution.wordBreak(str, words)) {
+//         cout << word << endl;
+//     }
+//     return 0;
+// }

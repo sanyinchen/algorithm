@@ -31,7 +31,7 @@ add_custom_target(niuke_input ALL DEPENDS ${NIUKE_OUTPUT})
 set(CMAKE_CXX_STANDARD 20)
 file(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/leetcode/editor/cn/*.cpp")
 #set(SOURCE_FILES leetcode/460_3_minJumps.cpp)
-list(APPEND SOURCE_FILES leetcode/527_wordsAbbreviation.cpp)
+list(APPEND SOURCE_FILES leetcode/0_common.cpp)
 
 #set(SOURCE_FILES niuke/296753.cpp)
 
