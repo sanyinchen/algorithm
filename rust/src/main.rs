@@ -1,5 +1,8 @@
-mod missing_ranges_163;
-use missing_ranges_163::run_example;
+use crate::maximum_total_damage_3186::run_example;
+
+mod common;
+mod maximum_total_damage_3186;
+
 fn main() {
     run_example();
 }

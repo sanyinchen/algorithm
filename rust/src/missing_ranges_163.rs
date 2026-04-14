@@ -1,4 +1,4 @@
-pub struct Solution;
+use crate::common::Solution;
 
 pub fn run_example() {
     let nums = vec![0, 1, 3, 50, 75];
