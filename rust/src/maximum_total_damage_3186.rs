@@ -15,7 +15,16 @@ impl Solution {
         let mut power = power;
         power.sort_unstable();
 
-        let mut values = Vec::new();
-        let mut gains = Vec::new();
+        let mut dp = Vec::new();
+
+        Self::get_damage(power, &mut dp)
     }
 
+    fn get_damage(power: Vec<i32>, dp: &mut Vec<i32>) -> i64 {
+        for item in &power {
+            println!("{}", item)
+        }
+
+        return 0;
+    }
+}
